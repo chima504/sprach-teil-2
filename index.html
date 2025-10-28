@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprachbausteine Teil 2
+
+</title>
+<style>
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(180deg, #f0f4f8, #ffffff);
+  color: #003366;
+  padding: 30px;
+}
+h1, h2 {
+  text-align: center;
+  color: #0a3d62;
+}
+.exercise {
+  background: #ffffffee;
+  border: 2px solid #a6c8ff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 850px;
+  margin: 25px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+p { line-height: 1.8; font-size: 18px; }
+.blank-btn {
+  display: inline-block;
+  min-width: 90px;
+  padding: 5px 10px;
+  border: 2px dashed #90caf9;
+  border-radius: 8px;
+  background: #f0f8ff;
+  color: #0a3d62;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 4px;
+}
+.blank-btn.filled { border-style: solid; background: #d6ecff; }
+.option-list {
+  background: white;
+  border: 2px solid #64b5f6;
+  border-radius: 8px;
+  padding: 6px;
+  margin-top: 5px;
+  max-height: 220px;
+  overflow-y: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  z-index: 9999;
+}
+.option-item {
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.option-item:hover { background: #e3f2fd; }
+.check-btn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+}
+.check-btn:hover { background: #0d47a1; }
+.result-correct {
+  background: #c8e6c9 !important;
+  border-color: #2e7d32 !important;
+  color: #1b5e20;
+}
+.result-wrong {
+  background: #ffcdd2 !important;
+  border-color: #c62828 !important;
+  color: #b71c1c;
+}
+.correct-answer {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.score {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1565c0;
+  margin-top: 15px;
+}
+.score.perfect {
+  color: #ffb300;
+  text-shadow: 0 0 5px #ffd54f;
+}
+</style>
+</head>
+<body>
+
+<h1>Sprachbausteine Teil 2</h1>
+
+<!-- Übung 1: Skipiste -->
+<h2>1. Die wichtigsten Regeln auf der Skipiste 🎿</h2>
+<div class="exercise" id="exercise1" data-options="ZWAR,vorsehen,STELLE,SOLLTE,RECHNEN,RAND,KANN,GÜLTIG,GELTEN,EINORDNEN,DARF,ANPASSEN,ANGEBEN,ALLERDINGS,SO">
+<p>
+Wer beim Skifahren fahrlässig einen anderen Sportler verletzt oder gefährdet, muss auch mit
+rechtlichen Folgen <button class="blank-btn" data-id="31">...</button>.
+Das Strafgesetzbuch ist sowohl auf der Straße als auch auf der
+Piste <button class="blank-btn" data-id="32">...</button>.
+Laut Gesetz gibt es Freiheitsstrafen bis zu 3 Monaten oder eine
+entsprechende Geldstrafe. Bei schwerer Körperverletzung sieht das Gesetz Freiheitsstrafen bis zu 6
+Monaten <button class="blank-btn" data-id="33">...</button>.
+Der deutsche Skiverband hat eine Pistenordnung erarbeitet, die bei gerichtlichen Entscheidungen angewandt wird.
+Jeder Wintersportler <button class="blank-btn" data-id="34">...</button> diese Regeln kennen.
+</p>
+<p>
+Jeder Skifahrer muss sich stets<button class="blank-btn" data-id="35">...</button> verhalten, dass er keinen anderen gefährdet oder schädigt. 
+Er muss die Zeichen und Hinweisschilder an der Piste kennen und beachten. 
+Er muss die eigene Geschwindigkeit und Fahrweise seinem Können und dem Gelände sowie den
+herrschenden Wetterverhältnissen <button class="blank-btn" data-id="36">...</button>.
+</p>
+<p>
+Überholen darf man rechts oder links, <button class="blank-btn" data-id="37">...</button> immer in einem Abstand, der dem überholten Skifahrer genug Raum für seine Bewegungen lässt.
+Aufsteigende Skifahrer dürfen nur den <button class="blank-btn" data-id="38">...</button> einer Abfahrtstrecke benützen.
+Gestürzte Skifahrer müssen eine solche <button class="blank-btn" data-id="39">...</button> so schnell wie möglich freimachen.
+Jeder Zeuge oder Verantwortliche muss bei einem Unfall außerdem seine Personalien 
+<button class="blank-btn" data-id="40">...</button>.
+</p>
+<button class="check-btn" onclick="checkExercise('exercise1')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score1"></div>
+</div>
+
+<!-- Übung 2: Theater -->
+<h2>2. Theater für Kinder und Jugendliche 🎭</h2>
+<div class="exercise" id="exercise2" data-options="AB,DARUM,ABER,DAZU,OHNE,SEIT,SONDERN,TROTZ,UM,VOR,WEGEN,AM,AUF,Da,ES">
+<p>
+Theater fördert nicht nur die Kreativität, <button class="blank-btn" data-id="41">...</button> auch die Körpererfahrung von Kindern.
+Der Verein "Jugendhilfe Düsseldorf e. V." arbeitet <button class="blank-btn" data-id="42">...</button> vielen Jahren in der Jugendförderung,
+und deshalb unterstützt er auch ein neues Theaterprojekt für Kinder. Üben und spielen werden
+die Teilnehmer im Jugendzentrum. Das Jugendzentrum ist eine Einrichtung des städtischen
+Jugendamtes und kümmert sich um Kinder, Jugendliche und junge Volljährige, die <button class="blank-btn" data-id="43">...</button>
+familiärer und anderer Probleme Hilfe benötigen.
+</p>
+<p>
+Bis zu zwanzig Mädchen und Jungen werden <button class="blank-btn" data-id="44">...</button> dem kommenden Jahr die Welt des Theaters kennenlernen.
+<button class="blank-btn" data-id="45">...</button> Ende des Projekts werden die Nachwuchsschauspieler bei einem Theaterfestival auftreten.
+</p>
+<p>
+Allen Mitarbeitern ist <button class="blank-btn" data-id="46">...</button> wichtig, dass die Kinder Anerkennung bekommen.
+Ohne finanzielle Unterstützung wäre das Vorhaben unmöglich, <button class="blank-btn" data-id="47">...</button> bei der Stadt keine Gelder vorhanden waren.
+Der Verein kümmert sich auch <button class="blank-btn" data-id="48">...</button>, die Projekte bekannt zu machen.
+Man hofft, <button class="blank-btn" data-id="49">...</button> diese Weise noch mehr Unterstützer zu finden.
+Aktuell sammelt das Jugendzentrum Spenden, <button class="blank-btn" data-id="50">...</button> weitere Projekte finanzieren zu können.
+</p>
+<button class="check-btn" onclick="checkExercise('exercise2')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score2"></div>
+</div>
+
+<!-- Übung 3: Ausbildung -->
+<h2>3. Ausbildung mit über 30</h2>
+<div class="exercise" id="exercise3" data-options="AUSWAHL,CHANCE,DA,DAGEGEN,DENN,DÜRFTEN,KÖNNTEN,MÖCHTE,SOLLTE,SONDERN,TROTZDEM,ÜBERNEHMEN,VERFÜGUNG,WARUM,ZIEHEN,">
+<p>
+Die gelernte Krankenschwester Jaqueline Delgado drückt mit 38 Jahren noch einmal die
+Schulbank. <button class="blank-btn" data-id="51">...</button> sie hat sich für einen beruflichen Neustart entschieden. Da ihr
+früherer Beruf ihr keinen Spaß mehr machte, begann sie eine Berufsausbildung bei der
+Polizei. Ihr Ziel: Sie <button class="blank-btn" data-id="52">...</button> in den Streifendienst gehen.
+Mit über 30 noch einmal einen ganz neuen Job zu erlernen - lange Zeit war das kaum
+möglich. Arbeitgeber suchten nur junge Berufseinsteiger. <button class="blank-btn" data-id="53">...</button>
+es heute in vielen
+Branchen aber an Nachwuchs fehlt, geben sie öfter auch Älteren eine <button class="blank-btn" data-id="54">...</button> Thomas Neuendorfer, der stellvertretende Sprecher der Polizei Berlin, erklärt,
+<button class="blank-btn" data-id="55">...</button> sein Arbeitgeber gerne Ältere ausbildet: "Sie haben in ihrem Berufsleben Erfahrungen gesammelt, die der Polizei und auch den Bürgern der Stadt zu Gute kommen". Sie seien häufig emotional reifer, außerdem bereit, Verantwortung zu <button class="blank-btn" data-id="56">...</button>und motiviert, die Ausbildung erfolgreich abzuschließen. Zudem <button class="blank-btn" data-id="57">...</button>
+sie die Jüngeren unterstützen und ihnen als Vorbild dienen. Davon profitierten dann auch die Arbeitgeber. Gegen die Einstellung von Alteren spreche nur, dass sie dem
+Unternehmen kürzer vor <button class="blank-btn" data-id="58">...</button> stehen <button class="blank-btn" data-id="59">...</button> haben ältere Azubis in vielen
+Bereichen Möglichkeiten: in kaufmännischen oder in gewerblich-technischen Berufen, im
+Gesundheitswesen oder vor allem in der Gastronomie.
+Wenn das Azubi-Gehalt nicht für den Lebensunterhalt <button class="blank-btn" data-id="60">...</button> es wird der
+individuelle, konkrete Bedarf ermittelt. Im August schließt Delgado ihre Ausbildung ab. In
+dem künftigen Polizei-Job wird sie ihr medizinisches Wissen, ihre Menschenkenntnis sowie ihre spanischen und englischen Sprachkenntnisse wohlt gut gebrauchen können.
+</p>
+<button class="check-btn" onclick="checkExercise('exercise3')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score3"></div>
+</div>
+
+<!-- Übung 4: Jugend diskutiert -->
+<h2>4. Jugend diskutiert – mach mit!</h2>
+<div class="exercise" id="exercise4" data-options="ALS,AN,AUSSERDEM,BEI,DARUNTER,WARUM,NACHDEM,OBWOHL,WEIL,SEIT,WER,VOR,WIE,DIE,WAS,">
+  <p>
+    Den Wettbewerb "Jugend diskutiert" gibt es bereits 
+    <button class="blank-btn" data-id="61">...</button> Herbst 2002. Für das
+    kommende Jahr werden nun wieder Schülerinnen und Schüler gesucht, die an dem Wettbewerb
+    teilnehmen möchten. <button class="blank-btn" data-id="62">...</button> immer bereiten sich die Teilnehmer dann im Unterricht auf
+    "Jugend diskutiert" vor.
+    Du fragst dich, <button class="blank-btn" data-id="63">...</button> du teilnehmen solltest? Ganz einfach: "Jugend diskutiert" bringt dich
+    weiter! Sich einmischen, mitreden, überzeugen – bei der Vorbereitung im Unterricht trainierst du
+    viele Fähigkeiten, die dir in der Schule und im Alltag helfen. Im Austausch mit den anderen
+    entwickelst du deine Persönlichkeit weiter und profitierst langfristig. <button class="blank-btn" data-id="64">...</button> bietet dir
+    "Jugend diskutiert" die Chance, im Wettstreit mit anderen weiterzukommen. Zuerst werden die
+    besten einer Schule ermittelt, die dann <button class="blank-btn" data-id="65">...</button> Regionalwettbewerben teilnehmen. Die
+    Sieger der Regionalwettbewerbe treten im Bundesfinale an. <button class="blank-btn" data-id="66">...</button> Preise kann man
+    professionelle Trainings gewinnen.
+    <button class="blank-btn" data-id="67">...</button> "Jugend diskutiert" kannst du viel lernen. Du hast bessere Chancen im Unterricht und
+    bei Referaten, denn du trainierst, frei zu sprechen und Dinge anschaulich und verständlich zu
+    beschreiben. Du gewinnst mehr Selbstbewusstsein, <button class="blank-btn" data-id="68">...</button> du lernst, wie man das Wort
+    ergreift und auf sich aufmerksam macht. Du kannst überzeugen, da du eigene Argumente finden
+    und die Argumente anderer genau prüfen kannst. Die Sichtweisen der anderen zeigen dir darüber
+    hinaus, <button class="blank-btn" data-id="69">...</button> du vielleicht selbst noch nicht gesehen hast. Du überzeugst bei Auftritten,
+    Prüfungen und Bewerbungen, da du sicher auftrittst.
+    <button class="blank-btn" data-id="70">...</button> das alles im Unterricht gelernt hat, kann gemeinsam mit anderen viel bewegen!
+    Schließlich ist der Wettbewerb "Jugend diskutiert" auch eine Chance, Jugendliche aus ganz
+    Deutschland kennenzulernen und neue Freundschaften zu knüpfen.
+    Weitere Informationen zu Anmeldung und Teilnahme gibt es im Internet.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise4')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score4"></div>
+</div>
+
+<!-- Übung 3: Das Fahrrad -->
+<h2>5. Das Fahrrad: ernsthafte Konkurrenz fürs Auto?</h2>
+<div class="exercise" id="exercise5" data-options="AN,AUF,BEINAHE,DAFÜR,DANN,DENN,DÜRFEN,FAST,INNERHALB,KAUM,MÜSSEN,SOLLEN,STATT,VOR,VORBEI,">
+  <p>
+    Welches Fortbewegungsmittel, denken Sie, wird in Deutschland am häufigsten benutzt?
+    Natürlich das Automobil. Volkswagen, Porsche, Mercedes Benz, BMW, Audi: In 
+    <button class="blank-btn" data-id="71">...</button> einem anderen Land gibt es so viele Automobilfabriken wie in Deutschland,
+    spielt die Automobilindustrie eine so große Rolle. Nahezu jeder Haushalt verfügt über mindestens ein Auto,
+    das Auto spielt im Leben der Deutschen eine große Rolle, sowohl als Fortbewegungsmittel zum Arbeitsplatz
+    oder in den Urlaub als auch als Statussymbol: Zeig mir dein Auto und ich weiß, wer du bist.
+    Doch hat das Autofahren auch Schattenseiten. Mangelnde Bewegungsmöglichkeiten, gesundheitliche Probleme und
+    Stress bringen zumindest in den Großstädten immer mehr Autofahrer dazu, sich vom Automobil freizumachen und 
+    <button class="blank-btn" data-id="72">...</button> ein anderes Verkehrsmittel umzusteigen, das in dem Ruf steht, gesünder zu sein
+    als das Auto: das Fahrrad. Nicht nur in der Freizeit, sondern auch auf dem Weg zum Arbeitsplatz wird das Rad benutzt.
+    "Ich habe keine Lust, Morgen für Morgen im Stau zu stehen und Zeit zu verlieren", sagt Bettina Meier (25):
+    "Da ist es viel entspannender, auf den zumeist gut ausgebauten Fahrradwegen an den im Stau wartenden Fahrzeugen 
+    <button class="blank-btn" data-id="73">...</button> und ausgeruht am Arbeitsplatz anzukommen."
+    Dass Fahrradfahren um einiges gesünder ist, als hinter dem Lenkrad zu sitzen, bestätigen auch die Mediziner.
+    Wer Fahrrad fährt <button class="blank-btn" data-id="74">...</button> zu sitzen, bringt seinen Blutkreislauf in Schwung, stärkt die
+    Abwehrkräfte des Körpers und trainiert seinen Körper. Auch die Bewegung an der frischen Luft tut Menschen gut,
+    die sich sonst die meiste Zeit <button class="blank-btn" data-id="75">...</button>
+    geschlossener Räume – in Büros, Schulen oder Fabriken – aufhalten <button class="blank-btn" data-id="76">...</button>
+    Auch die Geschäftswelt hat die Fahrradfahrer als Kunden entdeckt. Ein breites Angebot 
+    <button class="blank-btn" data-id="77">...</button> Zubehör für Fahrräder von schicken Radfelgen über sportliche Mehrganggetriebe,
+    mit denen Berge kein Problem mehr darstellen, bis zur Designer-Trinkflasche machen aus dem einfachen Fahrrad ein exklusives Fahrzeug.
+    Und natürlich darf bei keinem Fahrradfahrer eine aufwändige Sicherheitsausstattung mehr fehlen:
+    Schutzhelme, Ellenbogen- und Knieschützer, die das Fahrrad im Falle eines Unfalls fast so sicher wie einen Panzer machen 
+    <button class="blank-btn" data-id="78">...</button>
+    Nur wenn es regnet – und das passiert in Deutschland leider nicht so selten –, 
+    <button class="blank-btn" data-id="79">...</button> sind die Autoschlangen wieder länger.
+    <button class="blank-btn" data-id="80">...</button> einen praktischen Wetterschutz für Radfahrer
+    haben die Geschäfte noch nicht im Angebot.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise5')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score5"></div>
+</div>
+<!-- Übung 6: Teamarbeit -->
+<h2>6. Teamarbeit als Schlüssel zum Erfolg</h2>
+<div class="exercise" id="exercise6" data-options="MUSSTEN,WIE,LIEFERT,SEI,KONNTEN,NUR,HABEN,NACHWEISEN,GEBEN,FÖRDERTE,ERBRINGEN,DAZU,DAVON,BEKANNTLICH,ZU,">
+  <p>
+    Nicht nur Menschen sind in der Lage, bei der Lösung einer Aufgabe mit anderen
+    zusammenzuarbeiten. Ein deutsch-britisches Forscherteam konnte eindrücklich 
+    <button class="blank-btn" data-id="81">...</button>, dass auch Schimpansen 
+    <button class="blank-btn" data-id="82">...</button> echter Teamarbeit fähig sind. Die Wissenschaftler gaben zwei
+    Schimpansen gemeinsam die Aufgabe, Trauben aus einer Kiste zu holen. 
+    <button class="blank-btn" data-id="83">...</button> bekam einer der beiden Affen zwei Werkzeuge. 
+    Um die Aufgabe zu meistern, musste er aber eines 
+    <button class="blank-btn" data-id="84">...</button> an seine Artgenossen weitergeben. Zehn von zwölf Schimpansen taten dies auch, 
+    und in über 70 Prozent der Versuche 
+    <button class="blank-btn" data-id="85">...</button> es sogar das richtige Werkzeug gewesen, berichten die Forscher. 
+    Ziel der Untersuchung war es, herauszufinden, wo die Fähigkeit des Menschen zur
+    Zusammenarbeit herkommt und ob diese Eigenschaft 
+    <button class="blank-btn" data-id="86">...</button> beim Menschen vorhanden ist.
+    Dass einige Tierarten zusammenarbeiten, beispielsweise bei der Jagd, war bekannt. Unklar
+    war aber bisher, wie viel Teamarbeit bewusst erfolgt. In dem Versuch musste der eine Affe
+    Trauben mit einer Harke durch eine Öffnung in einer Kiste auf eine Platte schubsen. Der
+    andere Affe musste dann mit einem Stock die Platte anheben, damit die Trauben auf den
+    Boden fielen und die Affen sie fressen 
+    <button class="blank-btn" data-id="87">...</button>. Bei den einzelnen Affen dauerte es
+    unterschiedlich lange, bis ein Werkzeug weitergegeben wurde. Hatte einer es jedoch einmal
+    getan, gab er in 97 Prozent der folgenden Versuche wieder ein Werkzeug weiter. 
+    Diese Studie 
+    <button class="blank-btn" data-id="88">...</button> erste Hinweise darauf, dass Schimpansen bei einer gemeinsamen Aufgabe 
+    auf die Handlungen ihres Partners Acht 
+    <button class="blank-btn" data-id="89">...</button> können. Den Affen scheint bewusst zu sein, dass
+    ihr Artgenosse wichtig ist, um an die Trauben zu kommen. Daraus schließen die Forscher:
+    Genau 
+    <button class="blank-btn" data-id="90">...</button> den Menschen sei es den Affen möglich, strategisch zusammenzuarbeiten.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise6')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score6"></div>
+</div>
+<!-- Übung 7: Verlernen die Deutschen die Höflichkeit? -->
+<h2>7. Verlernen die Deutschen die Höflichkeit?</h2>
+<div class="exercise" id="exercise7" data-options="FEIN,MITEINANDER,GUT,MÖGEN,LASSEN,NACH,MAN,NACHEINANDER,MEINEN,NEHMEN,SICH,SINNLOS,STIMMEN,STÖREN,VERGEBLICH">
+  <p>
+    „Höflichkeit gehört zu den Dingen, die allmählich verschwinden." Drei von vier Deutschen 
+    <button class="blank-btn" data-id="91">...</button> dieser Behauptung zu: Früher waren die Menschen höflicher, 
+    <button class="blank-btn" data-id="92">...</button> einer Umfrage zufolge 75 Prozent der Befragten. 
+    Genauso viele denken, dass junge Leute zu wenig Respekt vor älteren Menschen haben. 
+    Ärgert sich da möglicherweise nur die ältere Generation über den Verlust überholter Umgangsformen? 
+    Keineswegs: Glaubt man der Studie, besteht der Wunsch 
+    <button class="blank-btn" data-id="93">...</button> gewissen Höflichkeitsformen altersübergreifend. 
+    Klare Spielregeln für ein höfliches 
+    <button class="blank-btn" data-id="94">...</button> 
+    In einer immer weniger von Formalität und offiziellen Hierarchien geprägten Welt sucht man sie oft 
+    <button class="blank-btn" data-id="95">...</button> 
+    Da wäre zum Beispiel die Frage nach dem Du oder Sie. 
+    <button class="blank-btn" data-id="96">...</button> die Hälfte der Deutschen gibt zu, regelmäßig verunsichert zu sein,
+    wie sie ihr Gegenüber ansprechen sollen. Während es jüngere Menschen zum Beispiel als normal oder sogar angenehm empfinden 
+    <button class="blank-btn" data-id="97">...</button> , vom Kellner geduzt zu werden, kann es älteren Semestern den Restaurantbesuch vermiesen. 
+    Nur ein Viertel der Befragten kann sich damit anfreunden, besonders Ältere 
+    <button class="blank-btn" data-id="98">...</button> sich am ungefragten Duzen. 
+    Über andere Umgangsformen herrscht hingegen Konsens bei Jung und Alt: 
+    Den Sitzplatz in der Bahn Älteren oder Schwangeren anzubieten, finden 94 Prozent wichtig. 
+    95 Prozent legen Wert auf Pünktlichkeit. 
+    Für immerhin 78 Prozent erfordert es die Höflichkeit, dass Männer Frauen die Tür aufhalten und ihnen den Vortritt 
+    <button class="blank-btn" data-id="99">...</button> . 
+    Unhöflich finden es 91 Prozent, wenn jemand während einer Unterhaltung auf das Handy schaut.
+    Angesichts von so viel Einigkeit über den angemessenen Umgang miteinander stellt sich freilich die Frage, 
+    warum so wenig davon im Alltag zu sehen ist. Wenn man weiß, was 
+    <button class="blank-btn" data-id="100">...</button> gehört, kann es doch nicht so schwer sein, sich daran zu halten.
+  </p>
+   <button class="check-btn" onclick="checkExercise('exercise7')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score7"></div>
+</div>
+
+<!-- Übung 8: Wie Handschrift wieder cool wird -->
+<h2>8. Wie Handschrift wieder cool wird</h2>
+<div class="exercise" id="exercise8" data-options="DAMIT,GEHT,SUCHEN,DAS,GESTALTEN,TUN,DASS,IMMER,VON,FIGUREN,NIE,WEIL,FÜR,SPIELERISCHE,WURDE,">
+  <p>
+    Mit dem sogenannten SMS-Daumen erbringen Kinder heutzutage Höchstleistungen.
+    Das Handgelenk hingegen schmerzt schnell, <button class="blank-btn" data-id="101">...</button> Schreiben mit der Hand ungewohnt ist.
+    Kinder haben damit in der Schule <button class="blank-btn" data-id="102">...</button> mehr Probleme.
+    Dennoch gibt es einen neuen Trend, der mit Handschrift zu <button class="blank-btn" data-id="103">...</button> hat:
+    Unter dem Hashtag Lettering finden sich auf Instagram über zwölf Millionen Beiträge.
+    Beim Lettering werden Buchstaben auf kunstvolle Weise gezeichnet und danach dekoriert.
+    Vom klassischen Schönschreiben, wie es früher unterrichtet und von einigen auch gefürchtet 
+    <button class="blank-btn" data-id="104">...</button>, ist das alles weit entfernt.
+    Die Verbindung <button class="blank-btn" data-id="105">...</button> Schrift und Bild lässt sich auch im Alltag anwenden.
+    Erfahrungen <button class="blank-btn" data-id="106">...</button> hat auch die Wiener Designerin Nina Holler gemacht,
+    die Schrift-Workshops für Kinder und Erwachsene anbietet.
+    Auf <button class="blank-btn" data-id="107">...</button> Weise vermittelt die Künstlerin das Thema Schrift aus unterschiedlichen Zeitepochen
+    bis hin zum handgezeichneten modernen Alphabet.
+    So will sie dem persönlichen sprachlichen Ausdruck wieder mehr Tiefe verleihen.
+    Der Rhythmus-Künstlerin ist es ein Anliegen,<button class="blank-btn" data-id="108">...</button> Kinder die Freude am Schreiben wieder entdecken.
+    Die Schülerinnen und Schüler lernen durch Lettering nebenbei auch, coole Einladungen und Logos zu 
+    <button class="blank-btn" data-id="109">...</button>.
+    Der Rhythmus mache den individuellen Ausdruck beim Schreiben mit der Hand aus.
+    Es nütze wenig, an einzelnen Elementen von Buchstaben zu schreiben, bis ihnen das flüssig von der Hand 
+    <button class="blank-btn" data-id="110">...</button>.
+    So wird die Feinmotorik wieder gestärkt, die vielen Kindern abhanden gekommen ist.
+    Gerade Jugendlichen im Alter zwischen 13 und 15 Jahren biete die Auseinandersetzung mit Schrift
+    eine Möglichkeit, die eigene Handschrift zu beurteilen und zu entwickeln.
+    So sollen sie neue Wege finden, um sich auszudrücken.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise8')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score8"></div>
+</div>
+
+<!-- Übung: Sicherer Schulweg -->
+<h2>9.Sicherer Schulweg</h2>
+<div class="exercise" id="exercise9" data-options="BEMÜHEN,KONZENTRIEREN,SCHON,FÜR,KRITISCHE,SELBST,DESHALB,LÖSUNGEN,STSTT,DOCH,NICHT,SELBSTBEWUSST,HILFREICH,PROBLEME,VERHALTEN,">
+  <p>
+    Kinder sind oft mit dem Straßenverkehr überfordert, 
+    <button class="blank-btn" data-id="111">...</button> ist es wichtig, dass sich
+    Eltern und Bezugspersonen den besten Schulweg überlegen und mit ihren Kindern
+    üben. <button class="blank-btn" data-id="112">...</button> immer ist der kürzeste Weg auch der ungefährlichste. 
+    Zum Üben sollte man sich Zeit nehmen und sich voll auf das Kind 
+    <button class="blank-btn" data-id="113">...</button>. 
+    Eltern sollten im Verkehr immer auch an ihre Vorbildfunktion denken: Verkehrsregeln nicht nur erklären,
+    sondern sich auch <button class="blank-btn" data-id="114">...</button> daran halten. Wegen ihrer geringeren Körpergröße haben
+    Kinder ein anderes Sichtfeld als Erwachsene. Dessen müssen sich die Erwachsenen bewusst sein. 
+    Manchmal ist es <button class="blank-btn" data-id="115">...</button>, wenn die Großen sich von ihren Kindern erzählen lassen, was diese sehen. 
+    Um das Kind langsam an den Schulweg zu gewöhnen, sollte es anfangs nur das letzte Stück allein gehen. 
+    Diese Strecke kann man dann Schritt <button class="blank-btn" data-id="116">...</button> Schritt verlängern. Dasselbe gilt für den Nachhauseweg.
+    Auch ist es sinnvoll, zu Schulbeginn nochmals kurz und klar die wichtigsten Regeln
+    für das <button class="blank-btn" data-id="117">...</button> im Straßenverkehr mit den Kindern zu wiederholen. 
+    Wenn der Schulweg kein Problem mehr darstellt, kann man noch mögliche 
+    <button class="blank-btn" data-id="118">...</button> Situationen besprechen. 
+    Wie zum Beispiel „Was machst du, wenn der Gehweg gesperrt ist?" oder 
+    „Was tust du, wenn die Ampel ausgefallen ist?" oder 
+    „Was machst du, wenn auf der anderen Straßenseite jemand nach dir ruft 
+    oder jemand bei Rot über die Kreuzung rennt?" 
+    So lernt das Kind, sich <button class="blank-btn" data-id="119">...</button> im Straßenverkehr zu verhalten und
+    selbstständig <button class="blank-btn" data-id="120">...</button> zu finden. 
+    Und die Erwachsenen können sicher sein, dass ihr Kind zumindest auf die Standardsituationen vorbereitet ist.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise9')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score9"></div>
+</div>
+
+<!-- Übung: Katzen -->
+<h2>10.KATZEN</h2>
+<div class="exercise" id="exercise10" data-options="zunächst,angaben,verhalten,bekannt,bloß,weiter,lage,wenn,denen,sondern,anzeigen,deren,sofern,stellung,vertaut,zudem">
+  <p>
+    Sitz, Platz, Pfötchen geben: Nur die wenigsten Katzen befolgen Kommandos. 
+    Dabei sind sie durchaus in der <button class="blank-btn" data-id="121">...</button>, 
+    ihren Namen aus anderen Wörtern herauszuhören, berichtet ein japanisches Forschungsteam 
+    im Fachblatt "Scientific Reports". Nach eigenen 
+    <button class="blank-btn" data-id="122">...</button> 
+    lieferten die
+Forscher den ersten experimentellen Nachweis, dass Katzen Laute von Menschen verstehen können.
+Die Forscher hatten das <button class="blank-btn" data-id="123">...</button> 
+    von 78 Katzen untersucht. <button class="blank-btn" data-id="124">...</button> 
+    spielten sie den Tieren vier japanische Wörter vom Band vor, die ähnlich klangen wie deren Namen. Dabei
+nahm die Aufmerksamkeit der Katzen immer <button class="blank-btn" data-id="125">...</button> 
+    ab.Erst als ihnen ihr eigener Name
+vorgespielt wurde, zeigten die meisten Tiere eine Reaktion. Sie bewegten beispielsweise ihre Ohren oder drehten den Kopf. Dies war auch dann zu beobachten, wenn nicht der
+Katzenbesitzer selbst zu seinem Tier sprach, <button class="blank-btn" data-id="126">...</button> 
+    eine fremde Person. Lebten mehrere Katzen in einem Haushalt, konnten einige sogar ihren Namen von 
+    <button class="blank-btn" data-id="127">...</button> 
+    ihrer Artgenossen unterscheiden.er Biologe Dennis Turner ist von dem Ergebnis nicht überrascht „Katzen sind
+sehr intelligente und lernfähige Tiere - <button class="blank-btn" data-id="128">...</button> 
+    sie bereit sind mitzumachen', sagt Turner, der nicht an der Studie beteiligt war. Aus vorherigen Untersuchungen ist
+    <button class="blank-btn" data-id="129">...</button> 
+    dass Katzen es verstehen, wenn Menschen mit dem Finger den Weg zum Fressnapf zeigen.Doch wenn die
+Tiere ihren Namen und einzelne Gesten verstehen, warum ist es dann <button class="blank-btn" data-id="130">...</button>, 
+    so schwierig, ihnen Tricks beizubringen?
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise10')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score10"></div>
+</div>
+
+<!-- Übung: Haustiere und Kleinkinder -->
+<h2>11.Ist der Umgang mit Haustieren gesund für Kleinkinder?</h2>
+<div class="exercise" id="exercise11" data-options="ZWAR,WURDEN,WIE,WENIGER,WAREN,VERGANGENE,UM,GERINGERES,GEGENTEIL,GEGENSATZ,FRÜHEREN,DURCH,DIESELBE,DEUTLICH,ALS">
+  <p>
+    Kleine Kinder, die in der Gesellschaft von Haustieren wie Hund und Katze leben, sind
+    einer Studie aus Finnland zufolge seltener krank 
+    <button class="blank-btn" data-id="131">...</button> 
+    Kinder in Haushalten ohne Tiere. Die Studie wurde in der 
+    <button class="blank-btn" data-id="132">...</button> 
+    Woche in einem amerikanischen Fachmagazin veröffentlicht. Es wurden 
+    <button class="blank-btn" data-id="133">...</button> 
+    keine Erklärungen für diese Tatsache geliefert, aber die Vermutung wurde geäußert, dass der Kontakt zu Hunden das Immunsystem der
+    Kleinkinder stärke. Hunde haben nämlich 
+    <button class="blank-btn" data-id="134">...</button> 
+    die täglichen Spaziergänge draußen viel Kontakt zu möglichen Krankheitserregern und trainieren vielleicht so das
+    Immunsystem der Kinder. Auch Katzen, die die Möglichkeit haben, nach draußen zu
+    gehen, haben demnach 
+    <button class="blank-btn" data-id="135">...</button> 
+    Wirkung auf die Gesundheit der Kinder, wenngleich in
+    geringerem Maße. Für die Studie 
+    <button class="blank-btn" data-id="136">...</button> 
+    in Finnland 397 Babys über den Zeitraum von der
+    neunten Lebenswoche bis zu ihrem ersten Geburtstag beobachtet. Dabei hatten die mit
+    Hund oder Katze aufwachsenden Kinder ein um 30 % 
+    <button class="blank-btn" data-id="137">...</button> 
+    Risiko für Erkrankungen der
+    Atemwege. Es fiel auf, dass bei diesen Kindern Ohrenentzündungen 
+    <button class="blank-btn" data-id="138">...</button> 
+    auftraten. Die
+    Studie kommt daher zu dem Schluss, dass die Gesundheit von Kindern in
+    Gesellschaft von Tieren 
+    <button class="blank-btn" data-id="139">...</button> 
+    besser sei. Frühere Untersuchungen aus den USA hatten das
+    genaue 
+    <button class="blank-btn" data-id="140">...</button> 
+    der jetzigen Ergebnisse ergeben. Ob diese Unterschiede mit den
+    unterschiedlichen Lebens- und Umweltbedingungen der beiden Länder zusammenhängen,
+    ist noch unklar.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise11')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score11"></div>
+</div>
+
+<!-- Übung: Manipulierte Bilder -->
+<h2>12.Manipulierte Bilder</h2>
+<div class="exercise" id="exercise12" data-options="ABER,ABGRENZEN,ALS,DIESEN,FLUT,KORREKT,MEISTEN,RECHT,REISEND,SOMIT,STELLT,UNLOGISCHE,UNTERSCHEIDEN,VERSCHIEDEN,ZWAR">
+  <p>
+    Im Internet, in sozialen Netzwerken und der Werbung werden wir mit einer 
+    <button class="blank-btn" data-id="141">...</button> von Fotos konfrontiert. 
+    Klar ist: Viele von ihnen sind keine wirklichen Originale, Bildbearbeitungsprogramme 
+    machen es sogar für Laien <button class="blank-btn" data-id="142">...</button> einfach, Fotos zu verändern. 
+    Meist sind die Manipulationen harmlos, <button class="blank-btn" data-id="143">...</button> 
+    die Möglichkeiten der Bildbearbeitung lassen sich natürlich auch für Betrügereien oder Meinungsmache missbrauchen. 
+    In diesem Zusammenhang <button class="blank-btn" data-id="144">...</button> sich die Frage, inwieweit Betrachtern solche Manipulationen auffallen. 
+    Können Sie erkennen, dass an einem Bild etwas merkwürdig ist, oder sogar die manipulierte Stelle finden 
+    <button class="blank-btn" data-id="145">...</button> Fragen sind nun Forscher der University of Warwick (UK) nachgegangen. 
+    Sie entwickelten dazu ein Online-Testsystem, bei dem die Teilnehmer den manipulierten Bereich auf Fotos erkennen sollten. 
+    Die Auswertungen ergaben: Die <button class="blank-btn" data-id="146">...</button> Teilnehmer waren nur eher zufällig in der Lage, 
+    ein manipuliertes Bild zu identifizieren. Oft hatten sie das vage Gefühl, dass mit einem der Bilder etwas nicht stimmt. 
+    Nur in 454 Prozent der Fälle konnten sie tatsächlich <button class="blank-btn" data-id="147">...</button> bestimmen, 
+    wo das Bild verändert worden war. Selbst ein falscher Schattenwurf oder andere <button class="blank-btn" data-id="148">...</button> 
+    Abweichungen wurden nicht besser erkannt als nachvollziehbare Manipulationen wie beispielsweise künstliche Farbveränderungen. 
+    Bilder haben einen starken Einfluss auf unsere Erinnerungen, so die Forscher. Können Menschen also nicht zwischen echten 
+    und gefälschten Details auf Fotos, <button class="blank-btn" data-id="149">...</button> so können manipulierte Bilder entscheidend beeinflussen, 
+    woran wir uns zu erinnern glauben. Die Ergebnisse dokumentierten <button class="blank-btn" data-id="150">...</button> 
+    Wir können recht leicht auf Fake-Fotos und damit auch auf ihre manipulierten Botschaften reinfallen. 
+    Aufbauend auf ihren Ergebnissen wollen die Forscher nun konkrete Ratschläge erarbeiten, die dem Betrachter helfen sollen, 
+    Fotomanipulationen besser zu erkennen.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise12')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score12"></div>
+</div>
+
+<!-- Übung: Garten in der Stadt -->
+<h2>13.Garten in der Stadt</h2>
+<div class="exercise" id="exercise13" data-options="SETZEN,GEZÜCHTET,VORTEILE,VOR,ES,EINFACH,MITLERWEILE,SOLCHE,DADURCH,VON,klein,KEIN,HÖHER,ERZOGEN,bezüchtet">
+  <p>
+    Unter jungen Großstadtbewohnern gibt es einen neuen Trend: sie wünschen sich einen Garten. 
+    Daher lassen sie sich auf lange Wartezeiten für Kleingartenparzellen <button class="blank-btn" data-id="151">...</button> auf Dächern vor Gärten. 
+    Mauer- und grüne Grünstreifen werden Blumen <button class="blank-btn" data-id="152">...</button> und WGs nutzen ihre Südbalkons nicht mehr, 
+    um Altglas, sondern um Pflanzentöpfe abzustellen. In den deutschen Städten wird also gegraben, gepflanzt, 
+    gegossen und geerntet. Die <button class="blank-btn" data-id="153">...</button> von grünen Städten liegen auf der Hand: je mehr Pflanzen es in einer Stadt gibt, 
+    desto <button class="blank-btn" data-id="154">...</button> ist die Lebensqualität. Pflanzen filtern Verunreinigungen aus der Luft, 
+    nehmen Kohlendioxid auf und geben Sauerstoff ab. Bäume sind natürliche Schutzwälle <button class="blank-btn" data-id="155">...</button> Wind und Lärm, 
+    Parks sind beliebte Treffpunkte und zu guter Letzt machen Pflanzen eine Stadt, die ansonsten aus Ziegeln, Beton und Asphalt besteht, auch viel schöner. 
+    Das liegt daran, dass sie auch einen psychologischen Effekt auf uns Menschen haben. Wo <button class="blank-btn" data-id="156">...</button> grünt und blüht, 
+    da fühlen wir uns <button class="blank-btn" data-id="157">...</button> wohl. 
+    <button class="blank-btn" data-id="158">...</button> haben viele Städte entdeckt, dass <button class="blank-btn" data-id="159">...</button> Städtchen 
+    auch schnell zu sozialen Treffpunkten werden <button class="blank-btn" data-id="160">...</button>.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise13')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score13"></div>
+</div>
+
+<!-- Übung: Wie Obst und Gemüse auf unsere Teller kommen -->
+<h2>14.Sprach Schlafzug: Wie Obst und Gemüse auf unsere Teller kommen</h2>
+<div class="exercise" id="exercise14" data-options="Doch,leitet,ankommt,nämlich,darf,als,genau,erwerben,sondern,abgeschlossen">
+  <p>
+    Es ist erst 6 Uhr morgens, und draußen herrscht noch Dunkelheit 
+    <button class="blank-btn" data-id="161">...</button> 
+    in der riesigen, hell erleuchteten Halle, in der sich Kisten mit Obst und Gemüse meterhoch stapeln, wird schon lange gearbeitet. „Vor ein paar Stunden war hier noch viel mehr Betrieb“, sagt Jens Rogall. Er 
+    <button class="blank-btn" data-id="162">...</button> 
+    einen Berliner Großmarkt, auf dem Einkäufer von Supermärkten, Geschäften oder Restaurants frisches Obst und Gemüse besorgen. Die Ware hat oft schon eine lange Reise zurückgelegt, bis sie auf dem Großmarkt 
+    <button class="blank-btn" data-id="163">...</button> 
+    Die meisten Früchte werden 
+    <button class="blank-btn" data-id="164">...</button> 
+    auf dem Land-, Luft- oder Seeweg aus wärmeren Ländern nach Deutschland transportiert. Wenn die Ware per Schiff nach Europa gebracht wird, kommt sie in großen Seehäfen wie Rotterdam oder Hamburg an. Von dort aus geht es mit dem Lastwagen weiter. Auf seinem Weg 
+    <button class="blank-btn" data-id="165">...</button> 
+    das empfindliche Obst und Gemüse keinesfalls Schaden nehmen. „Nichts ist schlimmer 
+    <button class="blank-btn" data-id="166">...</button> 
+    verdorbene Ware“, sagt Rogall. Auf dem Großmarkt schauen sich die Käufer alles 
+    <button class="blank-btn" data-id="167">...</button> 
+    an. Für makellose Salatköpfe, Beeren und Kräuter zahlen sie höhere Preise, krumme Gurken oder verwachsene Kartoffeln 
+    <button class="blank-btn" data-id="168">...</button> 
+    sie dagegen günstiger. Diese werden später nicht in Geschäften zum Verkauf angeboten, 
+    <button class="blank-btn" data-id="169">...</button> 
+    direkt verarbeitet. „Es ist egal, wie Gurken aussehen, die ohnehin im Fertigsalat landen“, erklärt Rogall. Wenn die Preisverhandlungen erfolgreich 
+    <button class="blank-btn" data-id="170">...</button> 
+    sind, werden die Paletten voller Obst und Gemüse hinaus zu den Lieferwagen gebracht. Die Fahrer müssen dann zügig zu den Geschäften und Restaurants fahren, um die Ware abzuliefern.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise14')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score14"></div>
+</div>
+
+<!-- Übung: Kaffee und Kuchen - ein Stück Tradition -->
+<h2>15.Sprach Bonbon :Kaffee und Kuchen - ein Stück Tradition</h2>
+<div class="exercise" id="exercise15" data-options="ZU,WIE,SICHER,DAMALS,SONDERN,VON,KONNTEN,BIS,AUS,IMMER">
+  <p>
+    In England zelebriert man um 17 Uhr die Teatime, in Deutschland trifft man sich am Sonntagnachmittag 
+    <button class="blank-btn" data-id="171">...</button> 
+    Kaffee und Kuchen. Schon unsere Großeltern haben diese Tradition zu schätzen gewusst. 
+    <button class="blank-btn" data-id="172">...</button> 
+    lange es den Brauch in der uns bekannten Form gibt, ist jedoch nicht bekannt. 
+    <button class="blank-btn" data-id="173">...</button> 
+    ist nur, dass sich dieses Getränk im 17. Jahrhundert in Europa als Genussmittel verbreitete. 
+    <button class="blank-btn" data-id="174">...</button> 
+    entstanden zahlreiche Kaffeehäuser - erst in Italien, dann in anderen Ländern. Das erste Café in Deutschland wurde im Jahr 1673 in Bremen eröffnet.
+    Die Kaffeehäuser begannen schnell, zu dem bitteren Kaffee süße Speisen zu servieren. Dort wurde jedoch nicht nur gespeist und getrunken, 
+    <button class="blank-btn" data-id="175">...</button> 
+    man konnte in Gesellschaft sein, und es fanden sogar kleine Konzerte statt. So wurde 1732 die berühmte Kaffeekantate 
+    <button class="blank-btn" data-id="176">...</button> 
+    Johann Sebastian Bach in dem Leipziger Kaffeehaus „Zimmermann" uraufgeführt.
+    Das schwarze Getränk war zu dieser Zeit aber noch ein Luxusgut, das sich nur Adelige und wohlhabende Bürger leisten 
+    <button class="blank-btn" data-id="177">...</button> 
+    Erst mit der Industrialisierung wurde es für den Großteil der Bevölkerung erschwinglich. 1965 wurde Kaffee zum ersten Mal vor Bier zum Lieblingsgetränk der Deutschen gekürt - und ist es 
+    <button class="blank-btn" data-id="178">...</button> 
+    heute geblieben.
+    Gegen Ende des 20. Jahrhunderts kam noch einmal Bewegung in die deutsche Kaffeewelt: Spezialitäten 
+    <button class="blank-btn" data-id="179">...</button> 
+    alle Welt wie Café au Lait oder Latte Macchiato wurden beliebter, die Zubereitungsarten vielfältiger. Der klassischen Filterkaffeemaschine setzten seitdem Espressokocher oder Kaffeevollautomaten 
+    <button class="blank-btn" data-id="180">...</button> 
+    häufiger Konkurrenz. Die Auswahl ist also größer geworden, doch die Liebe der Deutschen zu Kaffee und Kuchen bleibt nach wie vor unverändert.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise15')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score15"></div>
+</div>
+
+<!-- Übung: Das Schicksal des Braunbären -->
+<h2>16.Das Schicksal des Braunbären</h2>
+<div class="exercise" id="exercise16" data-options="BEGRIFFE,EINGRIFFE,SODASS,DADURCH,GING,SOWIE,DAFÜR,KAM,UM,DASS,NACHKOMMEN,VORKOMMEN,DENN,NOCH,WÄHREND">
+  <p>
+    Klimatische Veränderungen seit der letzten Kaltzeit könnten für den stetigen
+    Rückgang der Braunbärenzahl in Europa verantwortlich sein. Wie eine aktuelle
+    Studie nahelegt, haben vor allem steigende Wintertemperaturen 
+    <button class="blank-btn" data-id="181">...</button> 
+    der vergangenen 12000 Jahre die Fortpflanzungsrate der Tiere verringert, was
+    entscheidend zu deren Verschwinden beigetragen hat. Zudem wurden durch die
+    Klimaveränderung größere Flächen für den Ackerbau nutzbar. 
+    <button class="blank-btn" data-id="182">...</button> 
+    wurde der Lebensraum der Tiere verkleinert. Es ist längst unumstritten, 
+    <button class="blank-btn" data-id="183">...</button> 
+    das Verschwinden der Braunbären mit der Landnutzung durch den Menschen zusammenhängt.
+    Ein internationales Expertenteam untersuchte nun die Rolle des Klimas beim
+    Rückgang der Bärenzahl. In den letzten Jahren ist die Wintertemperatur in weiten
+    Teilen Europas 
+    <button class="blank-btn" data-id="184">...</button> 
+    zwei bis vier Grad angestiegen. In der Folge bekamen die
+    Braunbären weniger 
+    <button class="blank-btn" data-id="185">...</button> 
+    und ihre Zahl schrumpfte. Der Grund 
+    <button class="blank-btn" data-id="186">...</button> 
+    ist, dass Braunbären bei steigenden Wintertemperaturen mehr Energie für ihre
+    Winterruhe verbrauchen. Braunbärenweibchen benötigen ihre Energiereserven
+    auch für die Fortpflanzung, 
+    <button class="blank-btn" data-id="187">...</button> 
+    sie bringen im Winter ihre Jungen zur Welt. Wird
+    mehr Energie für die Winterruhe verbraucht, bleibt nicht so viel für die
+    Fortpflanzung übrig, und es gibt weniger Nachwuchs. Steigende Wintertemperaturen
+    könnten auch indirekt für das Schicksal des Braunbären verantwortlich gewesen sein.
+    Wärmere Winter begünstigten nämlich auch die menschlichen 
+    <button class="blank-btn" data-id="188">...</button> 
+    in die Naturlandschaften und damit in den Lebensraum der Braunbären. Am Ende der letzten Eiszeit war der Braunbär 
+    <button class="blank-btn" data-id="189">...</button> 
+    überall in Europa heimisch. Großes Aussterben gab es in Südwesteuropa vor 7000 bis 9000 Jahren.
+    Richtig bergab 
+    <button class="blank-btn" data-id="190">...</button> 
+    es mit dem Braunbären aber vor etwa 1000 Jahren, als sich sein Lebensraum weiter verringerte.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise16')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score16"></div>
+</div>
+
+<!-- Übung: Der klügste Freund des Menschen -->
+<h2>17.Der klügste Freund des Menschen</h2>
+<div class="exercise" id="exercise17" data-options="AB,ABER,AN,AUF,DARAUF,DARÜBER,DAVON,SEI,SEIEN,SONDERN,ÜBER,UM,WAR,WURDEN,ZWAR">
+  <p>
+    Wissenschaftliche Studie bescheinigt Hunden hohe Intelligenz<br><br>
+    Seit jeher gilt der Hund 
+    <button class="blank-btn" data-id="191">...</button> 
+    als treuer Begleiter des Menschen, besondere Leistungen auf
+    dem Gebiet der Intelligenz wurden ihm jedoch sehr viel seltener zugesprochen. Jetzt beweisen aber
+    Untersuchungen, die etwa zeitgleich an der Eötvös-Loránd-Universität in Budapest, an der Harvard
+    Universität und am Max-Planck-Institut für evolutionäre Anthropologie in Leipzig durchgeführt 
+    <button class="blank-btn" data-id="192">...</button> 
+    , dass die beliebten Vierbeiner offenbar mehr verstehen und leisten können, als man bislang glaubte.
+    In speziell ausgearbeiteten Lerntests mit Hunden, Schimpansen und Gorillas wurde die
+    Kommunikationsfähigkeit der Tiere getestet. In allen Tests schnitten die Hunde besser ab als die
+    Affen. Hunde lesen kommunikative Informationen besonders an den Augen 
+    <button class="blank-btn" data-id="193">...</button> 
+    , aber sie reagieren auch 
+    <button class="blank-btn" data-id="194">...</button> 
+    die Stimme und die Körpersprache eines Menschen. Ganz besonders der Blickkontakt 
+    <button class="blank-btn" data-id="195">...</button> 
+    für Hunde ein wichtiges Instrument, um Informationen über den "Gesprächspartner" zu erhalten.
+    Diese Fähigkeit habe sich im Verlaufe der Domestizierung der Hunde durch den Menschen immer
+    weiter ausgebildet und sei jetzt in den Genen der Hunde fest verankert, so die Aussage der Forscher.
+    Hunden wird jetzt auch bescheinigt, dass sie ein Verständnis für Objekte entwickelt haben. Die
+    Forscher versteckten vor den Augen ihrer Probanden Spielzeuge entweder hinter einer Wand oder in
+    einem Behälter. 
+    <button class="blank-btn" data-id="196">...</button> 
+    der Behälter nach dem Öffnen leer, suchten die Hunde auch hinter der Wand
+    nach dem Spielzeug. Hundetrainer, die in anerkannten Hundeschulen arbeiten, wissen schon lange
+    Erstaunliches über die Fähigkeiten ihrer Schüler zu berichten. Ein Beispiel für die erstaunlichen
+    Leistungen, die ein Hund zustande zu bringen vermag, ist der Blindenhund. Er kann nach den
+    entsprechenden Trainings blinden Menschen sicher den Weg zeigen, er achtet auf den
+    Straßenverkehr, er leitet sie 
+    <button class="blank-btn" data-id="197">...</button> 
+    Hindernisse herum. Nach neuesten Erkenntnissen wurden die ersten
+    Hunde vor etwa 15.000 Jahren in Ostasien domestiziert. Nach umfangreichen Erbgutuntersuchungen
+    geht man 
+    <button class="blank-btn" data-id="198">...</button> 
+    aus, dass alle heute bekannten Hunderassen von etwa fünf weiblichen Wölfen
+    abstammen. Als Ursprungsland der heutigen Hunderassen nimmt man China an.
+    Hundebesitzer von heute können also stolz 
+    <button class="blank-btn" data-id="199">...</button> 
+    sein, nicht nur einen anhänglichen, 
+    <button class="blank-btn" data-id="200">...</button> 
+    auch einen intelligenten Begleiter bei sich zu haben.
+  </p>
+   <button class="check-btn" onclick="checkExercise('exercise17')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score17"></div>
+</div>
+
+<!-- Übung: Schwarzarbeit kann teuer werden -->
+<h2>18.Schwarzarbeit kann teuer werden</h2>
+<div class="exercise" id="exercise18" data-options="ALLES,ANSTATT,AUSGEHEN,BEKOMMEN,BILDEN/ WECHSELEN,DAGEGEN,DAVON,GEGEN,HÖCHSTENS,JEDE,MEISTENS,SOLCHE,UM,WILL,WÜNSCHT">
+  <p>
+    Schnäppchen machen, um Rabatte feilschen: Wer billig einkauft, gilt als clever. Vorsicht ist jedoch bei Aufträgen an Schwarzarbeiter geboten. Denn schnell zahlt der Kunde drauf, 
+    <button class="blank-btn" data-id="201">...</button> 
+    – wie durch das illegale Arbeitsverhältnis erhofft – Geld zu sparen. Rund ums Haus ist nicht 
+    <button class="blank-btn" data-id="202">...</button> 
+    Gelegenheit so günstig, wie sie anfangs scheint: Schwarzarbeit etwa ist nicht nur verboten, sondern es gibt auch ein finanzielles Argument 
+    <button class="blank-btn" data-id="203">...</button> 
+    illegale Arbeiter: Oftmals rechnet sich der Dienst gegen Barzahlung gar nicht. "Abgesehen 
+    <button class="blank-btn" data-id="204">...</button> 
+    , dass es strafbar ist, Schwarzarbeiter zu beschäftigen, nimmt der Auftraggeber handfeste steuerliche Nachteile in Kauf", warnt Dirk Witte, Steuerberater aus Wildeshausen in Niedersachsen. Das Finanzamt 
+    <button class="blank-btn" data-id="205">...</button> 
+    eine ordentliche Rechnung und einen Überweisungsbeleg sehen. Barzahler können daher nichts von der Steuer absetzen. Noch schwerer fällt ins Gewicht, dass ein Kunde seine Haftungsansprüche aufs Spiel setzt, wenn er vordergründig ein paar Euro sparen möchte. Denn mängelfreie Bauten 
+    <button class="blank-btn" data-id="206">...</button> 
+    eher die Ausnahme. Ebenso dürften Verbraucher leer 
+    <button class="blank-btn" data-id="207">...</button> 
+    , wenn beim Bauen etwas zu Bruch geht. Ein ordentlicher Handwerker hat für 
+    <button class="blank-btn" data-id="208">...</button> 
+    Fälle eine Haftpflichtversicherung. Richtig teuer werden können auch Unfälle, bei denen sich der illegale Helfer verletzt. Dann zahlen weder Krankenversicherung noch Unfallkasse. Fällt etwa ein Arbeiter vom Gerüst und ist danach dauerhaft querschnittsgelähmt, dann wird der Kunde dafür sein Leben lang zahlen. Die Folgen von Schwarzarbeit lassen sich mit dem Dominoprinzip beschreiben: Fliegt die illegale Beschäftigung auf, dann 
+    <button class="blank-btn" data-id="209">...</button> 
+    es gleich mehrere Behörden mit. Post gibt es dann vom Finanzamt, der Staatsanwaltschaft und den Sozialversicherungsträgern. Dann braucht der Auftraggeber 
+    <button class="blank-btn" data-id="210">...</button> 
+    einen Anwalt. Und der kostet natürlich auch wieder Geld.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise18')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score18"></div>
+</div>
+
+<!-- Übung: Im Restaurant -->
+<h2>19.Im Restaurant</h2>
+<div class="exercise" id="exercise19" data-options="ALS,BEHÄLT,BEREIT,BLEIBT,DAGEGEN,FERTIG,GEHÖREN,JEDER,KLAR,MANCHER,MIT,TAKT,TIPP,WAS,WINK">
+  <p>
+    Eine unterhaltsame, schöne und gesellige Zeit. Das stellt man sich unter einem guten Essen vor. Störend wirkt da der anschauliche Erlebnisbericht der letzten Operation im Krankenhaus oder das Klingeln des Handys. Sowohl Gastgeber als Gast sollen alles dafür tun, dass das gemeinsame Essen Freude macht. Das Handy stellt man selbstverständlich ab. Das Essen beginnt, wenn der Gastgeber zur Serviette greift oder zum Gruß sein Glas erhebt. Besonders bei Kindern ein unbeliebtes Thema: die richtige Körperhaltung beim Essen. Die Arme 
+    <button class="blank-btn" data-id="211">...</button> 
+    nicht auf den Tisch und die Hände nicht unter den Tisch. Man sitzt gerade, ohne unruhig hin und her zu rücken. Die Beine werden nebeneinander gestellt, nicht übereinander gelegt. Die Schuhe 
+    <button class="blank-btn" data-id="212">...</button> 
+    in jedem Fall an. Nur keine Angst vor guten Restaurants mit ihrem Luxus! Denn je besser die Küche, umso aufmerksamer ist in der Regel das Personal. Doch schon bei der Anrede der Bedienung steht so 
+    <button class="blank-btn" data-id="213">...</button> 
+    vor einem Problem. Die Bedienung 
+    <button class="blank-btn" data-id="214">...</button> 
+    "Fräulein" an den Tisch zu rufen, ist in Zeiten der Gleichberechtigung veraltet. "Herr Ober" oder "Bedienung" ist 
+    <button class="blank-btn" data-id="215">...</button> 
+    noch möglich, aber auch schon etwas ungewöhnlich. Am besten versucht man sich Blickkontakt zu verschaffen, um mit einem kleinen 
+    <button class="blank-btn" data-id="216">...</button> 
+    mit der Hand den Kellner an den Tisch zu bitten. Zudem gibt es zwischen Gast und Service eine Zeichensprache. Schließt der Gast die Speisekarte und legt sie auf den Tisch, ist dies für den Kellner das Signal, die Bestellung aufzunehmen. Ist man mit dem Essen 
+    <button class="blank-btn" data-id="217">...</button> 
+    , legt man das Besteck parallel nebeneinander auf den rechten Tellerrand. Der Kellner wird dann abräumen. Macht man hingegen nur eine Pause, wird es gekreuzt oder offen auf den Teller gelegt. Beim Bezahlen ist 
+    <button class="blank-btn" data-id="218">...</button> 
+    gefragt. Übernimmt ein Gastgeber die Kosten, macht er dies dem Kellner 
+    <button class="blank-btn" data-id="219">...</button> 
+    . Ein "Bringen Sie mir bitte die Rechnung" reicht da völlig aus. Möchte man hingegen getrennt bezahlen, 
+    <button class="blank-btn" data-id="220">...</button> 
+    durchaus üblich ist, teilt man dies ebenfalls rechtzeitig der Bedienung mit. In Deutschland gibt man, je nach Zufriedenheit mit dem Service und der Höhe der Gesamtsumme, zwischen drei und zehn Prozent Trinkgeld. Ist man mit dem Service unzufrieden gewesen, gibt man kein Trinkgeld.
+  </p>
+   <button class="check-btn" onclick="checkExercise('exercise19')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score19"></div>
+</div>
+
+<!-- Übung: Maßgeschneidert nach Bodyscanning -->
+<h2>20.Maßgeschneidert nach Bodyscanning</h2>
+<div class="exercise" id="exercise20" data-options="ANS,ALS,DA,DARÜBER,DARUM,DAS,DASS,DÜRFEN,INS,MÜSSEN,NUR,SOLLEN,SONDERN,SOWIE,WEDER">
+  <p>
+    Haben Sie sich schon einmal 
+    <button class="blank-btn" data-id="221">...</button> 
+    geärgert, dass Sie zwar in vielen Geschäften viele schöne Kleidungsstücke sehen konnten, Ihnen aber dann bei der Anprobe keines gepasst hat?  
+    Dann geht es Ihnen wie zurzeit der Mehrheit der deutschen Bevölkerung: Die Kleidungsstücke, die in den Modehäusern angeboten werden, gibt es fast 
+    <button class="blank-btn" data-id="222">...</button> 
+    noch in den falschen Größen. Eine Untersuchung des Textilforschungszentrums Hohenstein brachte nun 
+    <button class="blank-btn" data-id="223">...</button> 
+    Licht, dass die Modeproduzenten den Grund dafür, dass viele Konfektionsgrößen offenbar 
+    <button class="blank-btn" data-id="224">...</button> 
+    den Kundinnen noch den Kunden passen, in der körperlichen Entwicklung der Bevölkerung in Deutschland suchen 
+    <button class="blank-btn" data-id="225">...</button> 
+    . Seit den 1960er Jahren seien die Deutschen im Durchschnitt um bis zu acht Zentimeter sowohl größer als auch dicker geworden. Die Länge der Arme habe zugenommen, besonders aber an den Hüften hätten die Deutschen beträchtlich zugelegt.  
+    <button class="blank-btn" data-id="226">...</button> 
+    der Handel natürlich daran interessiert ist, die Kleidungsstücke in den richtigen Größen in ausreichender Zahl zu produzieren, wurde jetzt ein neues Projekt geplant, 
+    <button class="blank-btn" data-id="227">...</button> 
+    Aufschluss darüber geben soll, welche Größen die Kunden eigentlich brauchen.  
+    Die neue Body-Scan-Technologie soll Männer und Frauen neu vermessen. Mehrere Kameras tasten mit Laserlicht die menschlichen Körper ab und erstellen ein dreidimensionales Ebenbild der gescannten Person. Diese dreidimensionalen Bilder 
+    <button class="blank-btn" data-id="228">...</button> 
+    es ermöglichen, in Zukunft genauere Informationen über die durchschnittliche Körpergröße zu erhalten.  
+    Ähnliche Messungen werden auch in Großbritannien, den Niederlanden, den skandinavischen Ländern, Frankreich und den USA vorgenommen. Mehr als zwei Millionen Euro wollen die Modefirmen dafür investieren, das Ergebnis lohnt sich aber für sie auf jeden Fall.  
+    Als Kundinnen und Kunden 
+    <button class="blank-btn" data-id="229">...</button> 
+    wir uns außerdem darauf freuen, 
+    <button class="blank-btn" data-id="230">...</button> 
+    sich als Nebenprodukt der Körpervermessung in den verschiedenen Ländern die Modefirmen vielleicht endlich dafür entscheiden, weltweit gleiche Nummern für gleiche Größen einzuführen.  
+    Dann ist ein Kleidungsstück mit der Nummer 26 überall gleich groß, ob in Nord- oder Südeuropa, in Amerika oder Asien.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise20')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score20"></div>
+</div>
+
+<!-- Übung: Maßgeschneidert nach Bodyscanning -->
+<h2>21.Maßgeschneidert nach Bodyscanning معدل</h2>
+<div class="exercise" id="exercise21" data-options="ALS,DASS,NUR,DA,GLEICH,SOLLEN,DARÜBER,HABE,SONDERN,DARUM,INS,SOWIE,DAS,KAM,WEDER">
+  <p>
+    Haben Sie sich schon einmal 
+    <button class="blank-btn" data-id="231">...</button> 
+    aufgeregt, dass Sie zwar in vielen Geschäften viele schöne Kleidungsstücke sehen konnten, Ihnen aber dann bei der Anprobe keines gepasst hat?  
+    Dann geht es Ihnen wie zurzeit der Mehrheit der deutschen Bevölkerung: Die Kleidungsstücke, die in den Modehäusern angeboten werden, gibt es fast 
+    <button class="blank-btn" data-id="232">...</button> 
+    noch in den falschen Größen. Eine Untersuchung des Textilforschungszentrums Hohenstein 
+    <button class="blank-btn" data-id="233">...</button> 
+    nun zu der folgenden Erkenntnis: Der Grund dafür, dass viele Konfektionsgrößen offenbar 
+    <button class="blank-btn" data-id="234">...</button> 
+    den Kundinnen noch den Kunden passen, sei die körperliche Entwicklung der Bevölkerung in Deutschland.  
+    Seit den 1960er Jahren seien die Deutschen im Durchschnitt um bis zu acht Zentimeter sowohl größer als auch dicker geworden. Die Länge der Arme 
+    <button class="blank-btn" data-id="235">...</button> 
+    zugenommen, besonders aber an den Hüften hätten die Deutschen beträchtlich zugelegt.  
+    <button class="blank-btn" data-id="236">...</button> 
+    man natürlich daran interessiert ist, Kleidungsstücke in den richtigen Größen und in ausreichender Zahl zu produzieren, soll jetzt ein neu ermittelt werden, welche Größen die Kunden eigentlich brauchen.  
+    Dazu wurde ein neues Verfahren entwickelt, 
+    <button class="blank-btn" data-id="237">...</button> 
+    Männer und Frauen neu vermessen soll.  
+    Bei der Body-Scan-Technologie tasten mehrere Kameras mit Laserlicht die menschlichen Körper ab und erstellen ein dreidimensionales Ebenbild der gescannten Person. Diese dreidimensionalen Bilder 
+    <button class="blank-btn" data-id="238">...</button> 
+    es ermöglichen, in Zukunft genauere Informationen über die durchschnittliche Körpergröße zu erhalten.  
+    Ähnliche Messungen werden auch in Großbritannien, den Niederlanden, den skandinavischen Ländern, Frankreich und den USA vorgenommen. Mehr als zwei Millionen Euro wollen die Modefirmen dafür investieren, das Ergebnis lohnt sich aber für sie auf jeden Fall.  
+    Als Kundinnen und Kunden dürfen wir uns außerdem darauf freuen, 
+    <button class="blank-btn" data-id="239">...</button> 
+    sich als Nebenprodukt der Körpervermessung in den verschiedenen Ländern die Modefirmen vielleicht endlich dafür entscheiden, weltweit gleiche Nummern für gleiche Größen einzuführen.  
+    Dann ist ein Kleidungsstück mit der Nummer 36 überall 
+    <button class="blank-btn" data-id="240">...</button> 
+    groß, ob in Nord- oder Südeuropa, in Amerika oder Asien.
+  </p>
+   <button class="check-btn" onclick="checkExercise('exercise21')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score21"></div>
+</div>
+
+<!-- Übung: Was steckt hinter "Bio"? -->
+<h2>22.Was steckt hinter "Bio"?</h2>
+<div class="exercise" id="exercise22" data-options="AN,AUF,AUS,AUBERDEM,DASS,ENTHALTEN,ENTLASTET,FÜR,HINTER,OB,SOGAR,SONDERN,VERWENDET,WENN,WIRKLICH">
+  <p>
+    Überall gibt es inzwischen Bio-Lebensmittel – aber häufig fehlen den Käufern Hintergrundinformationen.  
+    Viele Verbraucher fragen sich beispielsweise, 
+    <button class="blank-btn" data-id="241">...</button> 
+    Bio-Produkte nun auch wirklich die gesünderen sind.  
+    Skepsis macht sich breit, spätestens wenn wieder einmal ein Skandal in den Nachrichten ist.  
+    <button class="blank-btn" data-id="242">...</button> 
+    sind Bio-Produkte teurer – und den Aufpreis will man nur zahlen, wenn man sicher ist, dass die Bio-Lebensmittel die bessere Wahl sind.  
+    Der Informationsdienst des Bundesministeriums für Ernährung, Landwirtschaft und Verbraucherschutz gibt darüber eine eindeutige Auskunft: Bio-Lebensmittel sind gesünder.  
+    Sie 
+    <button class="blank-btn" data-id="243">...</button> 
+    weniger Nitrat, mehr Nährstoffe und sind besser geeignet, wenn man Allergien hat.  
+    Doch Bio-Lebensmittel sind nicht nur gut für die Gesundheit. Bei vielen Verbrauchern steht 
+    <button class="blank-btn" data-id="244">...</button> 
+    ihrem Einkaufsverhalten ein ökologisches Bewusstsein.  
+    Bio-Verbraucher machen sich Gedanken über die Herkunft der Lebensmittel, denn auch die umweltfreundliche Landwirtschaft ist besser für Tiere und Pflanzen, kurz: Sie 
+    <button class="blank-btn" data-id="245">...</button> 
+    unsere Umwelt.  
+    Und viele Bio-Verbraucher wollen als gesunde Menschen in einer gesunden Umwelt leben und auch der nächsten Generation eine gesunde Umwelt hinterlassen.  
+    Bio-Lebensmittel kommen 
+    <button class="blank-btn" data-id="246">...</button> 
+    ökologischer Landwirtschaft, die im Einklang mit der Natur steht.  
+    Die Mindestrichtlinien der Bio-Landwirtschaft beinhalten eine artgerechte Tierhaltung: Alle Tiere müssen ausreichend Platz haben, es gibt keine langen Tiertransporte, keine Gentechnik.  
+    Die Produkte werden möglichst in der näheren Umgebung verkauft, beispielsweise 
+    <button class="blank-btn" data-id="247">...</button> 
+    Wochenmärkten oder in Bio-Supermärkten.  
+    Außerdem dürfen weder Kunstdünger noch chemische Schädlingsbekämpfungsmittel 
+    <button class="blank-btn" data-id="248">...</button> 
+    werden.  
+    Wenn die Bio-Lebensmittel weiterverarbeitet werden – beispielsweise aus Bio-Eiern, Bio-Mehl und Bio-Zucker ein Bio-Kuchen gebacken wird –, dürfen 
+    <button class="blank-btn" data-id="249">...</button> 
+    nur Bio-Lebensmittel benutzt werden.  
+    Für Bio-Produkte gibt es übrigens auch ein Zertifikat, das Bio-Siegel. Diese Richtlinien garantieren, 
+    <button class="blank-btn" data-id="250">...</button> 
+    die Produkte wirklich "bio" sind.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise22')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score22"></div>
+</div>
+
+<!-- Übung: Online-Sprachkurse & Co. -->
+<h2>23.Online-Sprachkurse & Co. – Wie lernt man heute am besten eine Sprache?</h2>
+<div class="exercise" id="exercise23" data-options="ABER,ANSTATT,BESONDERS,FÜR,KAUM,MIT,SOGAR,MÜSSTE,SOLLTE,OHNE,SONDERN,SCHON,UM,SO,VON">
+  <p>
+    Es gibt inzwischen zahlreiche Online-Sprachkurse und 
+    <button class="blank-btn" data-id="251">...</button> 
+    mit Smartphones kann man Sprachen lernen.  
+    Eine weitere Lernmöglichkeit ist zum Beispiel eine Tandem-Partnerschaft 
+    <button class="blank-btn" data-id="252">...</button> 
+    einem Muttersprachler. Welche Vorteile und Nachteile haben die unterschiedlichen Methoden?  
+    Es gibt inzwischen zahlreiche Online-Lernportale, die leicht zu überblicken und zu bedienen sind.  
+    Der Vorteil: Man kann die Wörter nicht nur lesen, 
+    <button class="blank-btn" data-id="253">...</button> 
+    gleichzeitig auch hören. Außerdem kann man Wörter nachsprechen, 
+    <button class="blank-btn" data-id="254">...</button> 
+    dass ein ganzer Kurs zuhört.  
+    Auch Lerntipps bekommt man bei Online-Portalen, beispielsweise diesen:  
+    Vokabeln sollte man lieber mehrmals täglich in Fünf-Minuten-Blöcken wiederholen, 
+    <button class="blank-btn" data-id="255">...</button> 
+    sie in einer Stunde alle auf einmal zu lernen.  
+    Wer auch unterwegs lernen möchte, kann es mit einer Smartphone-App versuchen, einem kleinen Programm, das auf dem Handy läuft.  
+    Viele Programme gibt es kostenlos, andere kosten zwischen einem und mehreren Euro.  
+    Die kleinen Helfer sind 
+    <button class="blank-btn" data-id="256">...</button> 
+    gut zum Vokabellernen geeignet – mehr aber meist nicht.  
+    Das spielerische Vokabeltraining macht zwar Spaß, 
+    <button class="blank-btn" data-id="257">...</button> 
+    Satzbau oder andere Grammatikthemen werden allenfalls kurz angesprochen.  
+    Ein richtiges Gespräch kann man mit dieser Methode erst recht nicht üben.  
+    Dafür 
+    <button class="blank-btn" data-id="258">...</button> 
+    man besser in einen Kurs gehen oder einen Tandem-Partner suchen.  
+    Ein Tandem-Partner ist ein Muttersprachler, der die Grammatik erklärt, die Aussprache verbessert und seinerseits die Muttersprache des anderen lernen möchte.  
+    Der schnellste Weg, 
+    <button class="blank-btn" data-id="259">...</button> 
+    einen passenden Tandem-Partner zu finden, ist die Online-Suche:  
+    Muttersprache, Zielsprache und Wohnort eingeben, 
+    <button class="blank-btn" data-id="260">...</button> 
+    werden alle Treffer angezeigt.  
+    Man trifft sich beispielsweise in einem Restaurant, schickt sich Nachrichten oder E-Mails und erklärt sich gegenseitig die eigene Sprache.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise23')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score23"></div>
+</div>
+
+<!-- Übung: Man(n) kocht selbst -->
+<h2>24.Man(n) kocht selbst</h2>
+
+<div class="exercise" id="exercise24" data-options="DAFÜR,DAHER,DAMIT,DARAN,DASS,IRGENDEIN,WAS,WEITER,ZU,ZWISCHEN,DAZU,DENN,FÜR,DAVON,GEGEN">
+  <p>
+    Immer mehr deutsche Männer nehmen die Töpfe selbst in die Hand.  
+    Selbst ist der Mann. Von der Wahrheit dieser alten deutschen Redewendung haben Frauen Generationen
+    lang geträumt, wenn es um typische Hausarbeiten wie Waschen, Putzen oder Kochen ging. Zumindest bei
+    Letzterem scheint sich jedoch in der letzten Jahren vieles zu ändern. 
+    <button class="blank-btn" data-id="261">...</button> 
+    immer mehr Männer in Deutschland greifen jetzt selbst zum Kochtopf.  
+    Ein Grund 
+    <button class="blank-btn" data-id="262">...</button> 
+    diese Entwicklung mag sein, dass es immer mehr Ein-Personen-Haushalte in Deutschland gibt.  
+    Es ist einfach niemand anderes da, der die Kocharbeit übernehmen könnte. Und Hunger zwingt bekanntlich zum Handeln.  
+    Andererseits ist das Kochen inzwischen ein allgemein akzeptiertes Hobby geworden, besonders unter Männern.  
+    Doch welch ein Unterschied besteht 
+    <button class="blank-btn" data-id="263">...</button> 
+    den Ansprüchen einer traditionellen Hausfrau und denen eines Hobbykochs, was die Ausstattung der Küche angeht!  
+    Nicht 
+    <button class="blank-btn" data-id="264">...</button> 
+    Topf darf es für den selbsternannten Drei-Sterne-Küchenchef sein:  
+    Gebürsteter Edelstahl mit versiegelter Antibehaftbeschichtung und integrierter digitaler Temperaturanzeige ist der Mindeststandard für einen echten kochenden Mann.  
+    Alles andere gilt als stillos.  
+    <br><br>
+    Die zweite Voraussetzung 
+    <button class="blank-btn" data-id="265">...</button> 
+    , dass die Gerichte auch gelingen, ist das Wissen, wie man welche Speise am besten zubereitet.  
+    Zu diesem Zweck bieten die Buchhandlungen Berge von Kochbüchern an – mit Rezepten von Alaska bis Zimbabwe, mit oder ohne Fleisch, für zu Dicke und zu Dünne.  
+    Jetzt hängt es nur noch 
+    <button class="blank-btn" data-id="266">...</button> 
+    ab, was der Hobbykoch aus den Kochideen der Buchautoren macht.  
+    Wird es ein exzellentes Mahl oder wäre unser „Chefkoch“ nicht doch lieber zum Dönerstand um die Ecke gegangen?  
+    Überraschungen gehören zum Kochen dazu. Helfen die Bücher nicht 
+    <button class="blank-btn" data-id="267">...</button> 
+    , bieten zum Beispiel die Volkshochschulen zahlreiche Kochkurse an, die in der Regel – zumeist von kochwilligen Männern – gut besucht sind.  
+    Das Kursangebot umfasst neben deutscher Hausmannskost wie Schnitzel, Krautwickel oder Rinderbraten zumeist auch die mediterrane und die asiatische Küche.  
+    Das führt 
+    <button class="blank-btn" data-id="268">...</button> 
+    , dass man(n) zu Hause immer öfter international kocht.  
+    <br><br>
+    Das größte Problem der Hobbyköche ist aber, 
+    <button class="blank-btn" data-id="269">...</button> 
+    es viel zu aufwändig ist, für sich alleine zu kochen.  
+    Daher sind zurzeit Internetseiten wie www.allein-kochen-ist-doof.de beliebt, wo sich Hobbyköche und -köchinnen Kochpartner für das gemeinsame Kochen und Essen suchen können.  
+    Das Interessante 
+    <button class="blank-btn" data-id="270">...</button> 
+    ist, dass dabei unsere männlichen Chefköche feststellen müssen, dass es andere Menschen gibt, die mit vielleicht weniger Aufwand genauso gut ein Festmahl zubereiten können wie sie: nämlich die Frauen.
+  </p>
+   <button class="check-btn" onclick="checkExercise('exercise24')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score24"></div>
+</div>
+
+<!-- Übung: Fische sind schlauer, als wir denken -->
+<h2>25.10Fische sind schlauer, als wir denken</h2>
+
+<div class="exercise" id="exercise25" data-options="ALS,BEOBACHTUNG,BETRACHTUNG,DENN,DER,DEUTLICH,DOCH,ENTWARFEN,ENTWICKELTEN,FÄHIG,FÜR,GENAU,NOCH,ÜBRIGENS,WER">
+  <p>
+    Fische sind dumm, stumm und haben keine Empfindungen – diese Vorurteile halten sich hartnäckig.  
+    Doch 
+    <button class="blank-btn" data-id="271">...</button> 
+    das Gegenteil ist der Fall.  
+    Sie sind nämlich zu erstaunlichen kognitiven Leistungen 
+    <button class="blank-btn" data-id="272">...</button> 
+    und können sowohl Freude als auch Schmerz empfinden.  
+    Die meisten Menschen wüssten so gut wie nichts über Fische, beklagt der Verhaltensbiologe Douglas Allan.  
+    Wenn man genauer hinsehe, verändere sich aber die Sicht auf sie.  
+    Denn das Leben im Wasser stellt die etwa 33.000 existierenden Arten vor besondere Herausforderungen.  
+    Im Laufe der Zeit 
+    <button class="blank-btn" data-id="273">...</button> 
+    sie hochspezialisierte Sinnesfähigkeiten und Kommunikationsformen.  
+    So verständigen sie sich über Geräusche, Gerüche oder Berührungen.  
+    Einige Arten lernen durch 
+    <button class="blank-btn" data-id="274">...</button> 
+    oder benutzen sogar Werkzeuge.  
+    Bis in die 1930er Jahre wurde Fischen 
+    <button class="blank-btn" data-id="275">...</button> 
+    nicht einmal zugetraut, dass sie hören können.  
+    Erst dem österreichischen Verhaltensforscher Karl von Frisch gelang der Nachweis:  
+    Er brachte seinem blinden Wels Xaverl bei, auf ein akustisches Signal zu reagieren.  
+    Wenn er pfiff, kam Xaverl aus seinem Versteck, um Futter in Empfang zu nehmen.  
+    Der Forscher bewies 
+    <button class="blank-btn" data-id="276">...</button> 
+    auch als Erster, dass Fische Farben sehen können.  
+    <br><br>
+    <button class="blank-btn" data-id="277">...</button> 
+    warum wurden die Fähigkeiten der Fische so lange unterschätzt?  
+    <button class="blank-btn" data-id="278">...</button> 
+    intelligent halten wir oft nur Tiere, die uns ähnlich sind“, erklärt Douglas Allan.  
+    Fische hätten daher schlechte Karten.  
+    Schließlich müssten sie mit ganz anderen Lebensbedingungen zurechtkommen 
+    <button class="blank-btn" data-id="279">...</button> 
+    Tiere an Land.  
+    Allan rät, 
+    <button class="blank-btn" data-id="280">...</button> 
+    mehr über Fische herausfinden wolle, solle einfach mal in einem Aquarium im Zoo ein paar Minuten lang einen einzelnen Fisch beobachten.  
+    Dann erkenne man schnell, dass Fische nicht nur ein Bewusstsein, sondern auch einen eigenen Charakter und Bedürfnisse hätten.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise25')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score25"></div>
+</div>
+
+<!-- Übung: Wie TV-Bilder die Fantasie von Kindern prägen -->
+<h2>26.Wie TV-Bilder die Fantasie von Kindern prägen</h2>
+
+<div class="exercise" id="exercise26" data-options="AUS,DANN,DURCH,JENE,LIESSEN,MACHTEN,MIT,SO,UNTERSCHIEDEN,VERÄNDERTEN,VON,VOR,WAS,WELCHE,WIE">
+  <p>
+    Werden Kinder und Jugendliche 
+    <button class="blank-btn" data-id="281">...</button> 
+    brutale, von Gewalt geprägte Medieninhalte gewaltbereiter?  
+    Zumindest prägen Bilder aus Kino und Fernsehen massiv ihre Fantasie.  
+    Das zeigt eine Studie von Forschern der Universität Bonn.  
+    <button class="blank-btn" data-id="282">...</button> 
+    allem Jungen scheinen für extrem gewalttätige Bilder empfänglich zu sein.  
+    <br><br>
+    “Unsere Studie zeigt in der Tat, wie sehr Medienbilder inzwischen die Fantasie von Kindern beeinflussen”, erklärt Professor Volker Ladenthin von der Universität Bonn.  
+    “Also auch jene Fantasie, mit der sie ihr späteres Handeln planen.”  
+    Ladenthin hat zusammen mit seinen Forscherkollegen untersucht, 
+    <button class="blank-btn" data-id="283">...</button> 
+    Bilder in den Köpfen von Kindern herumgeistern.  
+    Die Wissenschaftler liessen nach Angaben knapp 300 Schüler der Klassenstufen 7 und 8 zu einem klassischen Märchenanfang einen Schlus schreiben .Die Fantasien der Jungen und Mädchen
+    <button class="blank-btn" data-id="284">...</button> 
+    sich deutlich:  
+    So beendeten Schüler ihre Märchen oft in wahren Blutorgien.  
+    Die Schülerinnen 
+    <button class="blank-btn" data-id="285">...</button> 
+    das Märchen dagegen meist gewaltfrei enden, verwendeten aber stattdessen gerne Anleihen an romantischen Fernsehsendungen.  
+    <br><br>
+    “Unsere Studie kann und will nicht nach den Ursachen von konkreten Gewaltverbrechen jugendlicher Täter fragen”, betont die an der Studie mitwirkende Medienwissenschaftlerin Jessica von Wülfing.  
+    Das Experiment zeige jedoch, 
+    <button class="blank-btn" data-id="286">...</button> 
+    sehr Bilder aus den Medien die Vorstellungswelt 
+    <button class="blank-btn" data-id="287">...</button> 
+    Jugendlichen prägen.  
+    <br><br>
+    “Das ist eine gefährliche Entwicklung”, warnt Ladenthin, auf den die Idee zu dem Projekt zurückgeht:  
+    “In der Jugend lernt man das Vokabular, 
+    <button class="blank-btn" data-id="288">...</button> 
+    dem man die Welt begreift.  
+    Wenn darin bestimmte Vokabeln fehlen – Mitgefühl, Liebe, aber auch Mitleid oder Schuld –, führt das zu Defiziten in der Wahrnehmung und in letzter Konsequenz auch im eigenen Verhalten.”  
+    Wer nie Musik gehört hat, kann keine Vorstellung davon entwickeln, 
+    <button class="blank-btn" data-id="289">...</button> 
+    Musik überhaupt ist.  
+    Ähnlich kann man in Horrorfilmen und Schießspielen vieles lernen, aber kein Mitgefühl.  
+    Sind die Jungen mit den brutalsten Märchen also allesamt potenzielle Gewalttäter?  
+    Sicherlich nicht, relativiert der Bonner Erziehungswissenschaftler.  
+    Gefährlich werde es aber 
+    <button class="blank-btn" data-id="290">...</button> 
+    , wenn positive Alternativbilder fehlten: Dann bleibe das Vokabular lückenhaft.  
+    Aufgabe der Schule sei es daher, Gegenbilder anzubieten.  
+    Und ganz klar ist das Fazit: Der Fernseher gehört nicht ins Kinderzimmer.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise26')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score26"></div>
+</div>
+
+<!-- Übung: Joggen : Mehr als nur Laufen -->
+<h2>27.Joggen : Mehr als nur Laufen</h2>
+
+<div class="exercise" id="exercise27" data-options="erheblich,schnell,immer,wird,dass,einem,aller,sollte,ist,sind,bequem,unter,bei,dabei,wie">
+  <p>
+    Auto, Rolltreppe, Fahrstuhl - das moderne Leben ist 
+    <button class="blank-btn" data-id="291">...</button> 
+    geworden. Ein Großteil der Bevölkerung verbringt den Tag sitzend. Zum Leidwesen unseres Körpers, denn das geht zu Lasten der Gesundheit.  
+    Herz-Kreislauf-Erkrankungen 
+    <button class="blank-btn" data-id="292">...</button> 
+    in den westlichen Industrieländern mittlerweile die Todesursache Nummer Eins. Dennoch: Rund zehn Millionen Menschen in Deutschland joggen, etwa acht Millionen gehen Inline-Skaten oder Rad fahren, jeder Dritte schwimmt. Wer regelmäßig, richtig und vor allem in Maßen trainiert, fördert Gesundheit, Körper- und Selbstbewusstsein.  
+    Zahlreiche Sportarten bieten einen einfachen und abwechslungsreichen Einstieg auch für Ungeübte.  
+    Vom Klassiker Jogging bis hin zu Walking, Radfahren, Schwimmen, Aerobic, Inline-Skating und Langlauf im Winter. Wichtig ist 
+    <button class="blank-btn" data-id="293">...</button> 
+    richtig zu trainieren, den Körper nicht zu überfordern - vor allem nach einer längeren Sportpause! Empfehlenswert ist aerobes Herz-Kreislauf-Training. Das bedeutet Ausdauertraining 
+    <button class="blank-btn" data-id="294">...</button> 
+    Verbrennung von Sauerstoff. Dreimal in der Woche 30 bis 40 Minuten genügen. Dabei 
+    <button class="blank-btn" data-id="295">...</button> 
+    der Puls kontrolliert werden. Der Richtwert ist hier 180 minus Lebensalter. Dann wird auch Fett verbrannt, der Körper nicht überfordert.  
+    <button class="blank-btn" data-id="296">...</button> 
+    mehr Menschen den Schritt in ein aktiveres Leben wagen sollten, machen zahlreiche Studien deutlich: Rund 40 Prozent 
+    <button class="blank-btn" data-id="297">...</button> 
+    Deutschen bringen zu viel auf die Waage, jeder zehnte ist sogar stark fettleibig - Tendenz steigend. Auch vor Kindern und Jugendlichen macht diese Entwicklung nicht halt.  
+    Oft fehlt die Zeit für regelmäßiges Essen, Sport und Entspannung. Der Körper quittiert dies meist mit Herz-Kreislauf-Erkrankungen, nicht selten mit 
+    <button class="blank-btn" data-id="298">...</button> 
+    Herzinfarkt - auch, und immer häufiger 
+    <button class="blank-btn" data-id="299">...</button> 
+    Frauen.  
+    Ausdauersport hingegen wirkt auf Herz, Gefäße, Muskeln, Körpergewicht, Hormone und Stimmungen. Stress wird wegtrainiert, Krankheiten geheilt und vorgebeugt. Zusammen mit der richtigen Ernährung minimiert sich das Risiko, einen Herzinfarkt oder Schlaganfall zu erleiden, 
+    <button class="blank-btn" data-id="300">...</button> 
+    Milch und Milchprodukte, pflanzliche Lebensmittel wie Vollkornprodukte, Obst, Gemüse, Salat, magere Wurst und Käsesorten unterstützen das richtige Training.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise27')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score27"></div>
+</div>
+<!-- Übung: Die Reise im Schlafwagen -->
+<h2>28.Die Reise im Schlafwagen</h2>
+
+<div class="exercise" id="exercise28" data-options="WÄHREND,VOREILIG,MODE,KUNDEN,KONKURRENZ,GRÜNDEN,GESAMT,GENAU,GANZ,FORM,EINGESTELLT,EINGESETZT,EIN,AUSSERDEM,ALS">
+  <p>
+    Lange sah es so aus, als würde er ganz verschwinden: Die Rede ist vom Nachtzug. In den letzten Jahrzehnten wurde er immer mehr von Billigfliegen verdrängt und viele Angebote wurden 
+    <button class="blank-btn" data-id="301">...</button> 
+    . Noch in den 1990er Jahren fuhren allerdings Nachtzüge von Deutschland aus direkt bis nach Venedig, Stockholm oder Warschau. Heute sind die Österreichischen Bundesbahnen der größte Nachtzuganbieter in Europa. Und das Geschäft läuft: Das Angebot gewinne kontinuierlich neue 
+    <button class="blank-btn" data-id="302">...</button> 
+    , erklärt Sprecher Olaf Heise.  
+    Die Zahl der Flugreisen steigt zwar weiter an, aber aus 
+    <button class="blank-btn" data-id="303">...</button> 
+    des Umweltschutzes rücken andere Transportmittel wieder stärker in den Fokus. Kommt der Nachtzug also wieder in 
+    <button class="blank-btn" data-id="304">...</button> 
+    ? Und könnten komfortable Schlafwagen tatsächlich dem Flugzeug als Reisemittel 
+    <button class="blank-btn" data-id="305">...</button> 
+    machen?  
+    Stefan Wiese, der als passionierter Bahnfahrer ein Blog für Zugreisende betreibt, ist skeptisch: „In den engen Schlafabteilen ist es manchmal 
+    <button class="blank-btn" data-id="306">...</button> 
+    schön ungemütlich und stickig.“ 
+    <button class="blank-btn" data-id="307">...</button> 
+    schrecke die lange Reisezeit viele ab. Mit dem Flugzeug schaffe man es in 90 Minuten von München nach Rom, mit der Bahn brauche man 13 Stunden.  
+    Dennoch: Es muss nicht immer das Flugzeug sein. 
+    <button class="blank-btn" data-id="308">...</button> 
+    umweltschonendes Transportmittel ist der Nachtzug aktueller denn je. Zumal er auch einige romantische Vorstellungen weckt: Vor den Zugfenstern ziehen malerische Landschaften vorbei, 
+    <button class="blank-btn" data-id="309">...</button> 
+    man von dem sanften Rattern des Zuges in den Schlaf gewiegt wird.  
+    Sicher ist jedenfalls: Wer schon bedauert hatte, dass mit dem Verschwinden des Nachtzugs ein Stück Reisekultur verlorengehen könnte, war etwas 
+    <button class="blank-btn" data-id="310">...</button> 
+    . Als sanfte Alternative zum Fliegen hat er durchaus eine Zukunft.
+  </p>
+   <button class="check-btn" onclick="checkExercise('exercise28')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score28"></div>
+</div>
+
+<!-- Übung: Liebesgrüße aus der Kühltruhe -->
+<h2>29.Liebesgrüße aus der Kühltruhe 'version 1'</h2>
+
+<div class="exercise" id="exercise29" data-options="ANHAND,AUF,AUS,EHER,ANSTRENGEND,FAST,FOLGLICH,IN,KAUM,LANGWEILIG,SOWIE,VON,WEGEN,WOHL,ZU">
+  <p>
+    Wer sich einen Mann angeln will, sollte einen Blick in dessen Tiefkühlfach werfen. Einer Studie zufolge kann man 
+    <button class="blank-btn" data-id="311">...</button> 
+    des Inhalts des Tiefkühlfachs den Charakter seines Besitzers erkennen. Die Meinungsforscher unterscheiden fünf Kategorien 
+    <button class="blank-btn" data-id="312">...</button> 
+    Single-Männern: den spontanen Typ, den Bequemen, den Kreativen, 
+    <button class="blank-btn" data-id="313">...</button> 
+    den Cocktail- und den Gourmet-Typen.  
+    Am häufigsten gibt es in Deutschland den spontanen Typ. Er hat neben kompletten Gerichten auch tiefgekühlte Produkte wie Brokkoligemüse oder Putenfilet in der Truhe, 
+    <button class="blank-btn" data-id="314">...</button> 
+    denen er eine Mahlzeit zusammenstellen kann.  
+    Dieser Typ liebt die Abwechslung auf dem Teller und auch sonst im Leben. Da wird es vermutlich auch in der Liebe nicht langweilig.  
+    Hauptgewinn für jede Frau ist aber der Gourmet-Typ. In seinem Tiefkühlfach liegen Produkte wie Garnelen, Muscheln oder Ente. Dieser Typ liebt es, Frauen zu verwöhnen. Der Nachteil liegt 
+    <button class="blank-btn" data-id="315">...</button> 
+    der Hand: Dieser Typ Single-Mann ist selten.  
+    Was man in der Teifkühltruhe von bequemen Single-Männern findet, kann man leicht erraten, denn diese Männer haben gar keine Lust zu kochen. Ihnen ist es sogar zu 
+    <button class="blank-btn" data-id="316">...</button> 
+    , zwei Tüten zu öffnen statt nur einer. 
+    <button class="blank-btn" data-id="317">...</button> 
+    kaufen diese Männer am häufigsten komplette Gerichte, die sie nur noch in die Mikrowelle oder den Backofen stellen müssen.  
+    Aber ob sie so das Herz einer Frau erobern können? Zumindest Frauen sehen das wohl 
+    <button class="blank-btn" data-id="318">...</button> 
+    skeptisch.  
+    Doch egal, 
+    <button class="blank-btn" data-id="319">...</button> 
+    welcher Kategorie ein Mann gehört - eines haben alle gemeinsam: Sie kaufen immer mehr Tiefkühlkost. Warum das so ist, kann die Studie nicht beantworten - da kann man nur raten: Einige haben vermutlich wenig Zeit zum Kochen, andere 
+    <button class="blank-btn" data-id="320">...</button> 
+    eher keine Lust. Dabei wäre das doch der beste Weg, um eine Frau zu erobern.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise29')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score29"></div>
+</div>
+
+<!-- Übung: Liebesgrüße aus der Kühltruhe -->
+<h2>30.Liebesgrüße aus der Kühltruhe 'version 2'</h2>
+
+<div class="exercise" id="exercise30" data-options="ZUFOLGE,AUF,OB,ANSTRENGEND,FAST,FOLGLICH,IN,KAUM,LANGWEILIG,JEDE,VON,WEGEN,WOHL,VERMUTLICH,ZU">
+  <p>
+    Wer sich einen Mann angeln will, sollte einen Blick in dessen Tiefkühlfach werfen. Einer Studie 
+    <button class="blank-btn" data-id="321">...</button> 
+    kann man anhand des Inhalts des Tiefkühlfachs den Charakter seines Besitzers erkennen.  
+    Die Meinungsforscher unterscheiden fünf Kategorien 
+    <button class="blank-btn" data-id="322">...</button> 
+    Single-Männern: den spontanen Typ, den Bequemen, den Kreativen, sowie den Cocktail- und den Gourmet-Typen.  
+    Am häufigsten gibt es in Deutschland den spontanen Typ. Er hat neben kompletten Gerichten auch tiefgekühlte Produkte wie Brokkoligemüse oder Putenfilet in der Truhe, aus denen er eine Mahlzeit zusammenstellen kann.  
+    Dieser Typ liebt die Abwechslung auf dem Teller und auch sonst im Leben. Da wird es vermutlich auch in der Liebe nicht langweilig.  
+    Hauptgewinn für 
+    <button class="blank-btn" data-id="323">...</button> 
+    Frau ist aber der Gourmet-Typ. In seinem Tiefkühlfach liegen Produkte wie Garnelen, Muscheln oder Ente.  
+    Dieser Typ liebt es, Frauen 
+    <button class="blank-btn" data-id="324">...</button> 
+    verwöhnen.  
+    Der Nachteil liegt 
+    <button class="blank-btn" data-id="325">...</button> 
+    der Hand: Dieser Typ Single-Mann ist selten.  
+    Was man in der Teifkühltruhe von bequemen Single-Männern findet, kann man leicht erraten, denn diese Männer haben gar keine Lust zu kochen.  
+    Ihnen ist es sogar zu 
+    <button class="blank-btn" data-id="326">...</button> 
+    , zwei Tüten zu öffnen statt nur einer.  
+    <button class="blank-btn" data-id="327">...</button> 
+    kaufen diese Männer am häufigsten komplette Gerichte, die sie nur noch in die Mikrowelle oder den Backofen stellen müssen.  
+    Aber 
+    <button class="blank-btn" data-id="328">...</button> 
+    sie so das Herz einer Frau erobern können? Zumindest Frauen sehen das wohl eher skeptisch.  
+    Doch egal, zu welcher Kategorie ein Mann gehört - eines haben alle gemeinsam:  
+    Sie kaufen immer mehr Tiefkühlkost. Warum das so ist, kann die Studie nicht beantworten - da kann man nur raten: Einige haben 
+    <button class="blank-btn" data-id="329">...</button> 
+    wenig Zeit zum Kochen, andere 
+    <button class="blank-btn" data-id="330">...</button> 
+    eher keine Lust. Dabei wäre das doch der beste Weg, um eine Frau zu erobern.
+  </p>
+   <button class="check-btn" onclick="checkExercise('exercise30')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score30"></div>
+</div>
+
+<!-- Übung: Liebesgrüße aus der Kühltruhe -->
+<h2>31.Liebesgrüße aus der Kühltruhe 'version 3'</h2>
+
+<div class="exercise" id="exercise31" data-options="ZUFOLGE,AUF,OB,ANSTRENGEND,FAST,FOLGLICH,IN,SOWIE,LANGWEILIG,JEDE,VON,WEGEN,DENEN,VERMUTLICH,ZU">
+  <p>
+    Wer sich einen Mann angeln will, sollte einen Blick in dessen Tiefkühlfach werfen. Einer Studie 
+    <button class="blank-btn" data-id="331">...</button> 
+    kann man anhand des Inhalts des Tiefkühlfachs den Charakter seines Besitzers erkennen.  
+    Die Meinungsforscher unterscheiden fünf Kategorien 
+    <button class="blank-btn" data-id="332">...</button> 
+    Single-Männern: den spontanen Typ, den Bequemen, den Kreativen,  
+    <button class="blank-btn" data-id="333">...</button> 
+    den Cocktail- und den Gourmet-Typen.  
+    Am häufigsten gibt es in Deutschland den spontanen Typ.  
+    Er hat neben kompletten Gerichten auch tiefgekühlte Produkte wie Brokkoligemüse oder Putenfilet in der Truhe,  
+    aus 
+    <button class="blank-btn" data-id="334">...</button> 
+    er eine Mahlzeit zusammenstellen kann.  
+    <br><br>
+    Dieser Typ liebt die Abwechslung auf dem Teller und auch sonst im Leben. Da wird es vermutlich auch in der Liebe nicht langweilig.  
+    Hauptgewinn für 
+    <button class="blank-btn" data-id="335">...</button> 
+    Frau ist aber der Gourmet-Typ. In seinem Tiefkühlfach liegen Produkte wie Garnelen, Muscheln oder Ente.  
+    Dieser Typ liebt es, Frauen zu verwöhnen. Der Nachteil liegt auf der Hand: Dieser Typ Single-Mann ist selten.  
+    <br><br>
+    Was man in der Teifkühltruhe von bequemen Single-Männern findet, kann man leicht erraten,  
+    denn diese Männer haben gar keine Lust zu kochen. Ihnen ist es sogar zu  
+    <button class="blank-btn" data-id="336">...</button> 
+    , zwei Tüten zu öffnen statt nur einer.  
+    <button class="blank-btn" data-id="337">...</button> 
+    kaufen diese Männer am häufigsten komplette Gerichte, die sie nur noch in die Mikrowelle oder den Backofen stellen müssen.  
+    Aber 
+    <button class="blank-btn" data-id="338">...</button> 
+    sie so das Herz einer Frau erobern können? Zumindest Frauen sehen das wohl eher skeptisch.  
+    <br><br>
+    Doch egal, 
+    <button class="blank-btn" data-id="339">...</button> 
+    welcher Kategorie ein Mann gehört – eines haben alle gemeinsam:  
+    Sie kaufen immer mehr Tiefkühlkost. Warum das so ist, kann die Studie nicht beantworten – da kann man nur raten:  
+    Einige haben 
+    <button class="blank-btn" data-id="340">...</button> 
+    wenig Zeit zum Kochen, andere wohl eher keine Lust. Dabei wäre das doch der beste Weg, um eine Frau zu erobern.
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise31')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score31"></div>
+</div>
+
+<!-- Übung: Deutschland - ein Paradies für Kinder? -->
+<h2>32.Deutschland - ein Paradies für Kinder? 'version 1'</h2>
+
+<div class="exercise" id="exercise32" data-options="AUF,BEI,DABEI,DAFÜR,DAS,DASS,MIT,DAVON,DENNOCH,DOCH,VON,JEDOCH,WEIL,OBWOHL,SONDERN">
+  <p>
+    17 Millionen Kinder leben in Deutschland. Verglichen 
+    <button class="blank-btn" data-id="341">...</button> 
+    der Bevölkerungszahl von ungefähr 80 Millionen ist das fast ein Viertel der Einwohner.  
+    Doch nur für jedes zehnte Kind unter drei Jahren steht ein Betreuungsplatz in einer Kindertagesstätte zur Verfügung.  
+    Die Folge: Nur etwas mehr als die Hälfte der Mütter dieser Kinder ist berufstätig – und nur ein Viertel kann ganztägig zur Arbeit gehen.  
+    <br><br>
+    Um dem entgegenzuwirken, gibt es in Deutschland die dreijährige Elternzeit, die es einem Elternteil ermöglichen soll, drei Jahre 
+    <button class="blank-btn" data-id="342">...</button> 
+    dem Kind zu Hause zu bleiben, 
+    <button class="blank-btn" data-id="343">...</button> 
+    hat den Vorteil, dass der zu Hause bleibende Elternteil seinen Arbeitsplatz nicht verliert.  
+    Dennoch wird die Elternzeit für viele Eltern in finanzieller Hinsicht zu einem gravierenden Problem.  
+    Außerdem gilt die Elternzeit nur für Angestellte. Mütter zum Beispiel, die vor der Geburt ihres Kindes selbständig waren und mit dem Baby zu Hause bleiben wollen, stehen weit schlechter da.  
+    <br><br>
+    Kind und Karriere zu vereinbaren ist daher in Deutschland für die meisten Mütter so gut wie unmöglich.  
+    Dies scheinen die Hauptgründe 
+    <button class="blank-btn" data-id="344">...</button> 
+    zu sein, warum in Deutschland zurzeit weltweit die wenigsten Kinder geboren werden.  
+    <br><br>
+    Doch auch andere Dinge machen Familien mit Kindern in Deutschland das Leben schwer:  
+    In Restaurants zum Beispiel sind Kinder selten willkommen. Sie sitzen eben nicht still am Tisch,  
+    <button class="blank-btn" data-id="345">...</button> 
+    stören mit ihrem Lachen und lauten Sprechen die anderen (kinderlosen) Gäste.  
+    Bei den kinderlosen Erwachsenen werden andere Maßstäbe angelegt.  
+    <button class="blank-btn" data-id="346">...</button> 
+    diese selbst häufig lautstark telefonieren, stört das niemanden: Telefonate sind eben wichtiger als Kinder.  
+    <br><br>
+    In zahlreichen deutschen Städten wie Mainz strengen Anwohner Prozesse gegen Kindergärten und Spielplätze an,  
+    <button class="blank-btn" data-id="347">...</button> 
+    die Kinder die Ruhe der benachbarten (kinderlosen) Hausbewohner stören.  
+    Die Folge: Spielplätze werden von Gerichts wegen geschlossen.  
+    An Wiesen, auf denen früher Kinder tobten und Ball sp ielten, stehen nun Schilder: Betreten und spielen verboten.  
+    Bei Zuwiderhandlung drohen Geldstrafen.  
+    <br><br>
+    Eltern, die mit der deutschen Bahn mit ihren Kindern verreisen möchten, haben schlechte Karten.  
+    In den meisten Zügen sind die Gänge so angeordnet,  
+    <button class="blank-btn" data-id="348">...</button> 
+    mit einem Kinderwagen kein Durchkommen ist.  
+    Und in den Mutter-Kind-Abteilen haben sich schon andere Reisende breitgemacht, die nicht einsehen, warum sie Müttern mit Kind Platz machen sollten.  
+    Schließlich hätten sie ja eine Fahrkarte gekauft und damit Anspruch 
+    <button class="blank-btn" data-id="349">...</button> 
+    einen Platz.  
+    In vielen Berichten in Zeitungen oder im Fernsehen, die sich mit Kindern, ihrer Erziehung oder mit dem Schulsystem befassen, spricht man in Deutschland gerne 
+    <button class="blank-btn" data-id="350">...</button> 
+    "Problemen". Man meint damit die Kinder.  
+    <br><br>
+    Kann eine Gesellschaft, in der ein Kind als ein Problemfall angesehen wird, ein Paradies für Kinder sein?
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise32')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score32"></div>
+</div>
+
+<!-- Übung: Deutschland - ein Paradies für Kinder? -->
+<h2>33.Deutschland - ein Paradies für Kinder? 'version 2'</h2>
+
+<div class="exercise" id="exercise33" data-options="AUF,BEI,DABEI,DENNOCH,DAS,DASS,SICH,ZUR,DAVON,WERDEN,NIEMANDEN,DIE,DOCH,JEDOCH,WEIL,VEREINBAREN">
+  <p>
+    17 Millionen Kinder leben in Deutschland. Verglichen mit der Bevölkerungszahl
+    von ungefähr 80 Millionen ist das fast ein Viertel der Einwohner.  
+    Doch nur für jedes zehnte Kind unter drei Jahren steht ein Betreuungsplatz in einer Kindertagesstätte 
+    <button class="blank-btn" data-id="351">...</button> 
+    Verfügung.  
+    Die Folge: Nur etwas mehr als die Hälfte der Mütter dieser Kinder ist berufstätig – und nur ein Viertel kann ganztägig zur Arbeit gehen.  
+    <br><br>
+    Um dem entgegenzuwirken, gibt es in Deutschland die dreijährige Elternzeit, die es einem Elternteil ermöglichen soll, drei Jahre 
+    <button class="blank-btn" data-id="352">...</button> 
+    dem Kind zu Hause zu bleiben, 
+    <button class="blank-btn" data-id="353">...</button> 
+    hat den Vorteil, dass der zu Hause bleibende Elternteil seinen Arbeitsplatz nicht verliert.  
+    <button class="blank-btn" data-id="354">...</button> 
+    wird die Elternzeit für viele Eltern in finanzieller Hinsicht zu einem gravierenden Problem.  
+    Außerdem gilt die Elternzeit nur für Angestellte.  
+    Mütter zum Beispiel, die vor der Geburt ihres Kindes selbständig waren und mit dem Baby zu Hause bleiben wollen, stehen weit schlechter da.  
+    <br><br>
+    Kind und Karriere zu <button class="blank-btn" data-id="355">...</button> ist daher in Deutschland für die meisten Mütter so gut wie unmöglich.  
+    Dies scheinen die Hauptgründe dafür zu sein, warum in Deutschland zurzeit weltweit die wenigsten Kinder geboren werden.  
+    <br><br>
+    <button class="blank-btn" data-id="356">...</button> 
+    auch andere Dinge machen Familien mit Kindern in Deutschland das Leben schwer:  
+    In Restaurants zum Beispiel sind Kinder selten willkommen. Sie sitzen eben nicht still am Tisch,  
+    <button class="blank-btn" data-id="357">...</button> 
+    stören mit ihrem Lachen und lauten Sprechen die anderen (kinderlosen) Gäste.  
+    Bei den kinderlosen Erwachsenen werden andere Maßstäbe angelegt.  
+    obwohl diese selbst häufig lautstark telefonieren, stört das 
+    <button class="blank-btn" data-id="358">...</button> 
+    : Telefonate sind eben wichtiger als Kinder.  
+    <br><br>
+    In zahlreichen deutschen Städten wie Mainz strengen Anwohner Prozesse gegen Kindergärten und Spielplätze an,  
+    <button class="blank-btn" data-id="359">...</button> 
+    die Kinder die Ruhe der benachbarten (kinderlosen) Hausbewohner stören.  
+    Die Folge: Spielplätze <button class="blank-btn" data-id="360">...</button>  von Gerichts wegen geschlossen.  
+    An Wiesen, auf denen früher Kinder tobten und Ball spielten, stehen nun Schilder: Betreten und spielen verboten.  
+    Bei Zuwiderhandlung drohen Geldstrafen.  
+    <br><br>
+    Eltern, die mit der deutschen Bahn mit ihren Kindern verreisen möchten, haben schlechte Karten.  
+    In den meisten Zügen sind die Gänge so angeordnet,  
+    <button class="blank-btn" data-id="361">...</button> 
+    mit einem Kinderwagen kein Durchkommen ist.  
+    Und in den Mutter-Kind-Abteilen haben  <button class="blank-btn" data-id="362">...</button>  schon andere Reisende breitgemacht,  
+    die nicht einsehen, warum sie Müttern mit Kind Platz machen sollten.  
+    Schließlich hätten sie ja eine Fahrkarte gekauft und damit Anspruch 
+    <button class="blank-btn" data-id="363">...</button> 
+    einen Platz.  
+    <br><br>
+    In vielen Berichten in Zeitungen oder im Fernsehen, <button class="blank-btn" data-id="364">...</button>  sich mit Kindern, ihrer Erziehung oder mit dem Schulsystem befassen,  
+    spricht man in Deutschland gerne von „Problemen“. Man meint damit die Kinder.  
+    Kann eine Gesellschaft, in der ein Kind als ein Problemfall angesehen wird, ein Paradies für Kinder sein?
+  </p>
+  <button class="check-btn" onclick="checkExercise('exercise33')">✅ تصحيح الأجوبة</button>
+<div class="score" id="score33"></div>
+</div>
+<script>
+const ANSWERS = {
+31:"RECHNEN",32:"GÜLTIG",33:"vorsehen",34:"SOLLTE",35:"SO",36:"ANPASSEN",37:"ALLERDINGS",38:"RAND",39:"STELLE",40:"ANGEBEN",
+41:"SONDERN",42:"SEIT",43:"WEGEN",44:"AB",45:"AM",46:"ES",47:"Da",48:"DARUM",49:"AUF",50:"UM",
+51:"DENN",52:"MÖCHTE",53:"DA",54:"CHANCE",55:"WARUM",56:"ÜBERNEHMEN",57:"KÖNNTEN",58:"VERFÜGUNG",59:"TROTZDEM",60:"SONDERN",
+61:"SEIT",62:"WIE",63:"WARUM",64:"AUSSERDEM",65:"AN",66:"ALS",67:"BEI",68:"WEIL",69:"WAS",70:"WER",
+71:"KAUM",72:"AUF",73:"VORBEI",74:"STATT",75:"INNERHALB",76:"MÜSSEN",77:"AN",78:"SOLLEN",79:"DANN",80:"DENN",
+81:"NACHWEISEN",82:"ZU",83:"DAZU",84:"DAVON",85:"SEI",86:"NUR",87:"KONNTEN",88:"LIEFERT",89:"GEBEN",90:"WIE",
+91:"STIMMEN",92:"MEINEN",93:"NACH",94:"MITEINANDER",95:"VERGEBLICH",96:"GUT",97:"MÖGEN",98:"STÖREN",99:"LASSEN",100:"SICH",
+101:"WEIL",102:"IMMER",103:"TUN",104:"WURDE",105:"VON",106:"DAMIT",107:"SPIELERISCHE",108:"DASS",109:"GESTALTEN",110:"GEHT",
+111:"DESHALB",112:"NICHT",113:"KONZENTRIEREN",114:"SELBST",115:"HILFREICH",116:"FÜR",117:"VERHALTEN",118:"KRITISCHE",119:"SELBSTBEWUSST",120:"LÖSUNGEN",
+121:"lage",122:"angaben",123:"verhalten",124:"zunächst",125:"weiter",126:"sondern",127:"denen",128:"sofern",129:"bekannt",130:"bloß",
+131:"ALS",132:"VERGANGENE",133:"ZWAR",134:"DURCH",135:"DIESELBE",136:"WURDEN",137:"GERINGERES",138:"WENIGER",139:"DEUTLICH",140:"GEGENTEIL",
+141:"FLUT",142:"RECHT",143:"ABER",144:"STELLT",145:"DIESEN",146:"MEISTEN",147:"KORREKT",148:"UNLOGISCHE",149:"UNTERSCHEIDEN",150:"SOMIT",
+151:"SETZEN",152:"GEZÜCHTET",153:"VORTEILE",154:"HÖHER",155:"VOR",156:"ES",157:"EINFACH",158:"MITLERWEILE",159:"SOLCHE",160:"DADURCH",
+161:"Doch",162:"leitet",163:"ankommt",164:"nämlich",165:"darf",166:"als",167:"genau",168:"erwerben",169:"sondern",170:"abgeschlossen",
+171:"Zu",172:"WIE",173:"SICHER",174:"DAMALS",175:"SONDERN",176:"VON",177:"KONNTEN",178:"BIS",179:"AUS",180:"IMMER",
+181:"WÄHREND",182:"DADURCH",183:"DASS",184:"UM",185:"NACHKOMMEN",186:"DAFÜR",187:"DENN",188:"EINGRIFFE",189:"NOCH",190:"GING",
+191:"ZWAR",192:"WURDEN",193:"AB",194:"AUF",195:"SEI",196:"WAR",197:"UM",198:"DAVON",199:"DARAUF",200:"SONDERN",
+201:"ANSTATT",202:"JEDE",203:"GEGEN",204:"DAVON",205:"WILL",206:"BILDEN/ WECHSELEN",207:"AUSGEHEN",208:"SOLCHE",209:"BEKOMMEN",210:"MEISTENS",
+211:"GEHÖREN",212:"BEHÄLT",213:"MANCHER",214:"MIT",215:"DAGEGEN",216:"WINK",217:"FERTIG",218:"TAKT",219:"KLAR",220:"WAS",
+221:"DARÜBER",222:"NUR",223:"ANS",224:"WEDER",225:"MÜSSEN",226:"DA",227:"DAS",228:"SOLLEN",229:"DÜRFEN",230:"DASS",
+231:"DARÜBER",232:"NUR",233:"KAM",234:"WEDER",235:"HABE",236:"DA",237:"DAS",238:"SOLLEN",239:"DASS",240:"GLEICH",
+241:"OB",242:"AUẞERDEM",243:"ENTHALTEN",244:"HINTER",245:"ENTLASTET",246:"AUS",247:"AUF",248:"VERWENDET",249:"WIRKLICH",250:"DASS",
+251:"SOGAR",252:"MIT",253:"SONDERN",254:"OHNE",255:"ANSTATT",256:"BESONDERS",257:"ABER",258:"SOLLTE",259:"UM",260:"SCHON",
+261:"DENN",262:"FÜR",263:"ZWISCHEN",264:"IRGENDEIN",265:"DAFÜR",266:"DAVON",267:"WEITER",268:"DAZU",269:"DASS",270:"DARAN",
+271:"GENAU",272:"FÄHIG",273:"ENTWICKELTEN",274:"BEOBACHTUNG",275:"NOCH",276:"ÜBERIGENS",277:"DOCH",278:"FÜR",279:"ALS",280:"WER",
+281:"DURCH",282:"VOR",283:"WELCHE",284:"UNTERSCHIEDEN",285:"LIESSEN",286:"WIE",287:"VON",288:"MIT",289:"WAS",290:"DANN",
+291:"bequem",292:"ist",293:"sollte",294:"dass",295:" wie",296:"wird",297:"sind ",298:"erheblich",299:"immer",300:"bei",
+301:"EINGESTELLT",302:"KUNDEN",303:"GRÜNDEN",304:"MODE",305:"KONKURRENZ",306:"GANZ",307:"AUSSERDEM ",308:"ALS",309:"WÄHREND",310:"VOREILIG",
+311:"ANHAND",312:"VON",313:"SOWIE",314:"AUS",315:"AUF",316:"ANSTRENGEND",317:"FOLGLICH ",318:"EHER",319:"ZU",320:" WOHL",
+321:"ZUFOLGE",322:"VON",323:"JEDE",324:"ZU",325:"AUF",326:"ANSTRENGEND",327:"FOLGLICH ",328:"OB",329:"VERMUTLICH",330:" WOHL",
+331:"ZUFOLGE",332:"VON",333:"SOWIE",334:"DENEN",335:"JEDE",336:"ANSTRENGEND",337:"FOLGLICH ",338:"OB",339:"ZU",340:" VERMUTLICH",
+341:"MIT",342:"BEI",343:"DAS",344:"DAFÜR",345:"SONDERN",346:"OBWOHL",347:"WEIL ",348:"DASS",349:"AUF",350:" VON",
+351:"ZUR",352:"BEI",353:"DAS",354:"DENNOCH",355:"VEREINBAREN",356:"DOCH",357:"SONDERN",358:"NIEMANDEN ",359:"WEIL",360:"WERDEN",361:" DASS",362:" SICH",363:" AUF",364:" DIE",
+};
+
+let activeList = null;
+
+document.querySelectorAll('.blank-btn').forEach(btn=>{
+btn.addEventListener('click', (e)=>{
+  e.stopPropagation();
+  closeOptions();
+  showOptions(btn);
+});
+});
+
+function showOptions(btn){
+  const exercise = btn.closest('.exercise');
+  const options = exercise.dataset.options.split(",");
+  const box = document.createElement('div');
+  box.className = 'option-list';
+  options.forEach(opt=>{
+    const item = document.createElement('div');
+    item.className = 'option-item';
+    item.textContent = opt;
+    item.onclick = ()=>{
+      btn.textContent = opt;
+      btn.dataset.selected = opt;
+      btn.classList.add('filled');
+      closeOptions();
+    };
+    box.appendChild(item);
+  });
+  btn.after(box); // الاختيارات تظهر مباشرة تحت الفراغ
+  activeList = box;
+  box.scrollIntoView({behavior: "smooth", block: "nearest"});
+}
+
+function closeOptions(){
+  if(activeList){ activeList.remove(); activeList=null; }
+}
+
+document.addEventListener('click', e=>{
+  if(!e.target.classList.contains('blank-btn')) closeOptions();
+});
+
+function checkExercise(exerciseId){
+  const ex = document.getElementById(exerciseId);
+  const blanks = ex.querySelectorAll('.blank-btn');
+  let correct = 0;
+  blanks.forEach(btn=>{
+    const id = btn.dataset.id;
+    const sel = btn.dataset.selected;
+    const correctAns = ANSWERS[id];
+    btn.classList.remove('result-correct','result-wrong');
+    const next = btn.nextElementSibling;
+    if(next && next.classList.contains('correct-answer')) next.remove();
+    if(sel === correctAns){
+      btn.classList.add('result-correct');
+      correct++;
+    } else {
+      btn.classList.add('result-wrong');
+      const span = document.createElement('span');
+      span.className = 'correct-answer';
+      span.textContent = `→ ${correctAns}`;
+      btn.insertAdjacentElement('afterend', span);
+    }
+  });
+  const score = (correct * 1.5).toFixed(1);
+  const scoreDiv = ex.querySelector('.score');
+  scoreDiv.textContent = `نتيجتك: ${score} / 15`;
+  if(score == 15) scoreDiv.classList.add('perfect');
+  else scoreDiv.classList.remove('perfect');
+}
+</script>
+
+</body>
+</html>
